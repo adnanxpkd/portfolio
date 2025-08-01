@@ -1,6 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,7 +8,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="icon" href="https://img.icons8.com/nolan/64/portfolio.png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
   <style>
     :root {
       --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -35,6 +33,12 @@
       font-family: 'Inter', sans-serif;
       line-height: 1.6;
       overflow-x: hidden;
+      background-image: url('https://images.unsplash.com/photo-1581090700227-1e8a1d4e1c3e?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      background-blend-mode: overlay;
+      background-color: rgba(10, 10, 10, 0.9); /* Dark overlay to maintain readability */
     }
 
     /* Animated background */
@@ -183,6 +187,7 @@
       transform: translateY(-3px);
       box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
       color: white;
+      background: var(--primary-gradient); /* Ensure consistent hover */
     }
 
     /* Glass sections */
@@ -231,9 +236,10 @@
 
     .project-img {
       width: 100%;
-      height: 250px;
+      height: 200px; /* Adjusted to match additional CSS */
       object-fit: cover;
       transition: all 0.3s ease;
+      background-color: #121212; /* Fallback from additional CSS */
     }
 
     .project-card:hover .project-img {
@@ -242,6 +248,9 @@
 
     .project-card .card-body {
       padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
     }
 
     .btn-project {
@@ -256,12 +265,14 @@
       transition: all 0.3s ease;
       width: 100%;
       text-align: center;
+      margin-top: auto; /* From additional CSS */
     }
 
     .btn-project:hover {
       transform: translateY(-2px);
       box-shadow: 0 10px 25px rgba(240, 147, 251, 0.4);
       color: white;
+      background: #ff66c4; /* From additional CSS for hover */
     }
 
     /* Contact form */
@@ -332,12 +343,10 @@
       .hero-title {
         font-size: 2.5rem;
       }
-      
       .profile-image {
         width: 200px;
         height: 200px;
       }
-      
       .glass-section {
         padding: 2rem 1rem;
       }
@@ -385,7 +394,6 @@
     }
   </style>
 </head>
-
 <body>
   <!-- Loading Screen -->
   <div class="loader" id="loader">
@@ -442,14 +450,13 @@
               fundamentals of modern web technologies.
             </p>
             <p class="text-center mb-4">
-              I'm currently studying at <strong>bridgeOn</strong>, an institution that has been key to shaping who I am. 
+              I'm currently studying at <strong>bridgeOn</strong>, an institution that has been key to shaping who I am.
               With their support, I've built a strong foundation and the confidence to pursue a career in tech.
             </p>
             <p class="text-center mb-5">
               I enjoy creating responsive and user-friendly websites, and I'm always exploring new tools and
               technologies to improve my skills. My current focus is on building real-world projects to gain practical experience.
             </p>
-            
             <div class="row text-center">
               <div class="col-md-4 mb-3">
                 <div class="p-3">
@@ -527,7 +534,6 @@
           <div class="col-lg-6 mb-4">
             <h4 class="mb-4">Get in Touch</h4>
             <p class="mb-4">I'm always open to connecting with new people. Whether you want to ask questions, discuss projects, or just say hello, feel free to reach out!</p>
-            
             <div class="mb-3">
               <i class="fas fa-phone me-3" style="color: #667eea;"></i>
               <span>+91 95624 93851</span>
@@ -538,7 +544,6 @@
                 adnanmuhammedkundukara@gmail.com
               </a>
             </div>
-
             <div class="social-links text-center">
               <a href="https://www.instagram.com/a.d_n_a.n" target="_blank">
                 <i class="fab fa-instagram"></i>
@@ -557,7 +562,6 @@
               </a>
             </div>
           </div>
-          
           <div class="col-lg-6">
             <form method="POST" id="contactForm">
               <input type="hidden" name="access_key" value="bcb42fbb-d604-464d-9a7f-f79f6c805472" />
@@ -619,7 +623,7 @@
 
     // Smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
+      anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
@@ -693,7 +697,7 @@
       });
     });
 
-    // Add some interactive particles (optional enhancement)
+    // Add interactive particles
     function createParticle() {
       const particle = document.createElement('div');
       particle.style.cssText = `
@@ -706,12 +710,9 @@
         z-index: 1;
         opacity: 0.7;
       `;
-      
       particle.style.left = Math.random() * window.innerWidth + 'px';
       particle.style.top = window.innerHeight + 'px';
-      
       document.body.appendChild(particle);
-      
       const animation = particle.animate([
         { transform: 'translateY(0px)', opacity: 0.7 },
         { transform: `translateY(-${window.innerHeight + 100}px)`, opacity: 0 }
@@ -719,13 +720,10 @@
         duration: Math.random() * 3000 + 2000,
         easing: 'linear'
       });
-      
       animation.onfinish = () => particle.remove();
     }
 
-    // Create particles occasionally
     setInterval(createParticle, 2000);
   </script>
 </body>
-
 </html>
