@@ -24,13 +24,11 @@
       --shadow-glow: 0 0 20px rgba(0, 255, 136, 0.3);
       --code-bg: #1a1a20;
     }
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
       background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
       color: var(--text-primary);
@@ -39,7 +37,6 @@
       overflow-x: hidden;
       position: relative;
     }
-
     /* Matrix-style background animation */
     body::before {
       content: '';
@@ -54,7 +51,6 @@
       z-index: -1;
       animation: matrixFlow 20s ease-in-out infinite alternate;
     }
-
     @keyframes matrixFlow {
       0% { 
         transform: translateX(-10px) translateY(-10px) rotate(0deg);
@@ -65,7 +61,6 @@
         opacity: 0.6;
       }
     }
-
     /* Code grid background */
     .code-grid {
       position: fixed;
@@ -80,12 +75,10 @@
       z-index: -1;
       animation: gridShift 30s linear infinite;
     }
-
     @keyframes gridShift {
       0% { transform: translate(0, 0); }
       100% { transform: translate(50px, 50px); }
     }
-
     /* Professional navbar */
     .navbar {
       background: rgba(10, 10, 15, 0.95);
@@ -94,13 +87,11 @@
       transition: all 0.3s ease;
       padding: 1rem 0;
     }
-
     .navbar.scrolled {
       background: rgba(10, 10, 15, 0.98);
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
       padding: 0.5rem 0;
     }
-
     .navbar-brand {
       font-family: 'JetBrains Mono', monospace;
       font-weight: 700;
@@ -109,17 +100,14 @@
       text-decoration: none;
       position: relative;
     }
-
     .navbar-brand::after {
       content: '_';
       animation: blink 1s infinite;
     }
-
     @keyframes blink {
       0%, 50% { opacity: 1; }
       51%, 100% { opacity: 0; }
     }
-
     .nav-link {
       font-family: 'JetBrains Mono', monospace;
       font-weight: 500;
@@ -128,29 +116,24 @@
       position: relative;
       padding: 0.5rem 1rem !important;
     }
-
     .nav-link::before {
       content: '< ';
       opacity: 0;
       transition: all 0.3s ease;
     }
-
     .nav-link::after {
       content: ' />';
       opacity: 0;
       transition: all 0.3s ease;
     }
-
     .nav-link:hover {
       color: var(--text-accent) !important;
       transform: translateY(-2px);
     }
-
     .nav-link:hover::before,
     .nav-link:hover::after {
       opacity: 1;
     }
-
     /* Terminal-style hero */
     .hero-section {
       min-height: 100vh;
@@ -159,7 +142,6 @@
       position: relative;
       padding: 100px 0;
     }
-
     .terminal-window {
       background: var(--code-bg);
       border: 2px solid var(--border-color);
@@ -168,7 +150,6 @@
       box-shadow: var(--shadow-glow);
       margin-bottom: 2rem;
     }
-
     .terminal-header {
       background: linear-gradient(90deg, #ff5f56, #ffbd2e, #27ca3f);
       height: 30px;
@@ -177,7 +158,6 @@
       padding: 0 15px;
       position: relative;
     }
-
     .terminal-header::after {
       content: 'muhammed-adnan-k@portfolio:~$';
       position: absolute;
@@ -186,52 +166,44 @@
       font-size: 12px;
       color: white;
     }
-
     .terminal-content {
       padding: 20px;
       font-family: 'JetBrains Mono', monospace;
       color: var(--text-accent);
       min-height: 200px;
     }
-
     .typing-animation {
       overflow: hidden;
       border-right: 2px solid var(--text-accent);
       white-space: nowrap;
       animation: typing 3s steps(40) 1s both, blink-caret 1s step-end infinite;
     }
-
     @keyframes typing {
       from { width: 0; }
       to { width: 100%; }
     }
-
     @keyframes blink-caret {
       0%, 50% { border-color: var(--text-accent); }
       51%, 100% { border-color: transparent; }
     }
-
     .profile-image {
       width: 250px;
       height: 250px;
-      border-radius: 20px;
+      border-radius: 8px; /* Changed from 20px to 8px for square shape */
       object-fit: cover;
       border: 3px solid var(--text-accent);
       box-shadow: var(--shadow-glow);
       transition: all 0.3s ease;
       animation: float 6s ease-in-out infinite;
     }
-
     .profile-image:hover {
-      transform: scale(1.05) rotate(2deg);
+      transform: scale(1.05); /* Removed rotation for professional look */
       box-shadow: 0 0 40px rgba(0, 255, 136, 0.5);
     }
-
     @keyframes float {
       0%, 100% { transform: translateY(0px); }
       50% { transform: translateY(-15px); }
     }
-
     /* Code block styling */
     .code-block {
       background: var(--code-bg);
@@ -244,7 +216,6 @@
       overflow-x: auto;
       position: relative;
     }
-
     .code-block::before {
       content: 'JavaScript';
       position: absolute;
@@ -255,13 +226,11 @@
       font-size: 12px;
       color: var(--text-secondary);
     }
-
     /* Professional sections */
     .section {
       padding: 80px 0;
       position: relative;
     }
-
     .glass-card {
       background: var(--bg-glass);
       backdrop-filter: blur(20px);
@@ -272,7 +241,6 @@
       position: relative;
       overflow: hidden;
     }
-
     .glass-card::before {
       content: '';
       position: absolute;
@@ -283,17 +251,14 @@
       background: linear-gradient(90deg, transparent, rgba(0, 255, 136, 0.1), transparent);
       transition: left 0.6s ease;
     }
-
     .glass-card:hover::before {
       left: 100%;
     }
-
     .glass-card:hover {
       transform: translateY(-10px);
       border-color: var(--text-accent);
       box-shadow: var(--shadow-glow);
     }
-
     .section-title {
       font-family: 'JetBrains Mono', monospace;
       font-size: 2.5rem;
@@ -303,12 +268,10 @@
       margin-bottom: 3rem;
       position: relative;
     }
-
     .section-title::before {
       content: '// ';
       color: var(--text-secondary);
     }
-
     .section-title::after {
       content: '';
       position: absolute;
@@ -319,7 +282,6 @@
       height: 3px;
       background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
     }
-
     /* Skills visualization */
     .skill-item {
       background: var(--bg-card);
@@ -331,7 +293,6 @@
       position: relative;
       overflow: hidden;
     }
-
     .skill-item::before {
       content: '';
       position: absolute;
@@ -343,17 +304,14 @@
       transform: scaleX(0);
       transition: transform 0.3s ease;
     }
-
     .skill-item:hover::before {
       transform: scaleX(1);
     }
-
     .skill-item:hover {
       transform: translateY(-5px);
       border-color: var(--text-accent);
       box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
     }
-
     .skill-icon {
       font-size: 3rem;
       margin-bottom: 1rem;
@@ -362,7 +320,6 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
-
     /* Project cards */
     .project-card {
       background: var(--bg-card);
@@ -373,7 +330,6 @@
       height: 100%;
       position: relative;
     }
-
     .project-card::before {
       content: '';
       position: absolute;
@@ -385,17 +341,14 @@
       transform: scaleX(0);
       transition: transform 0.3s ease;
     }
-
     .project-card:hover::before {
       transform: scaleX(1);
     }
-
     .project-card:hover {
       transform: translateY(-15px) scale(1.02);
       box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
       border-color: var(--text-accent);
     }
-
     .project-img {
       width: 100%;
       height: 220px;
@@ -403,19 +356,16 @@
       transition: all 0.4s ease;
       background: var(--code-bg);
     }
-
     .project-card:hover .project-img {
       transform: scale(1.1);
       filter: brightness(1.1);
     }
-
     .project-tech {
       display: flex;
       gap: 0.5rem;
       flex-wrap: wrap;
       margin-top: 1rem;
     }
-
     .tech-tag {
       background: var(--code-bg);
       color: var(--text-accent);
@@ -425,7 +375,6 @@
       font-family: 'JetBrains Mono', monospace;
       border: 1px solid var(--border-color);
     }
-
     /* Modern buttons */
     .btn-primary-custom {
       background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
@@ -441,7 +390,6 @@
       position: relative;
       overflow: hidden;
     }
-
     .btn-primary-custom::before {
       content: '';
       position: absolute;
@@ -452,17 +400,14 @@
       background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
       transition: left 0.6s ease;
     }
-
     .btn-primary-custom:hover::before {
       left: 100%;
     }
-
     .btn-primary-custom:hover {
       transform: translateY(-3px);
       box-shadow: 0 10px 25px rgba(0, 255, 136, 0.4);
       color: var(--bg-primary);
     }
-
     .btn-secondary-custom {
       background: transparent;
       border: 2px solid var(--text-accent);
@@ -475,14 +420,12 @@
       display: inline-block;
       transition: all 0.3s ease;
     }
-
     .btn-secondary-custom:hover {
       background: var(--text-accent);
       color: var(--bg-primary);
       transform: translateY(-3px);
       box-shadow: 0 10px 25px rgba(0, 255, 136, 0.3);
     }
-
     /* Contact form */
     .form-control {
       background: var(--code-bg);
@@ -493,19 +436,16 @@
       font-family: 'JetBrains Mono', monospace;
       transition: all 0.3s ease;
     }
-
     .form-control:focus {
       background: var(--bg-card);
       border-color: var(--text-accent);
       box-shadow: 0 0 0 0.2rem rgba(0, 255, 136, 0.25);
       color: var(--text-primary);
     }
-
     .form-control::placeholder {
       color: var(--text-secondary);
       font-family: 'JetBrains Mono', monospace;
     }
-
     /* Social links */
     .social-link {
       display: inline-flex;
@@ -523,7 +463,6 @@
       position: relative;
       overflow: hidden;
     }
-
     .social-link::before {
       content: '';
       position: absolute;
@@ -535,56 +474,46 @@
       opacity: 0;
       transition: opacity 0.3s ease;
     }
-
     .social-link:hover::before {
       opacity: 1;
     }
-
     .social-link:hover {
       transform: translateY(-5px);
       color: var(--bg-primary);
       border-color: var(--text-accent);
     }
-
     .social-link i {
       position: relative;
       z-index: 1;
     }
-
     /* Animations */
     .fade-in {
       opacity: 0;
       transform: translateY(30px);
       transition: all 0.6s ease;
     }
-
     .fade-in.visible {
       opacity: 1;
       transform: translateY(0);
     }
-
     .slide-in-left {
       opacity: 0;
       transform: translateX(-50px);
       transition: all 0.6s ease;
     }
-
     .slide-in-left.visible {
       opacity: 1;
       transform: translateX(0);
     }
-
     .slide-in-right {
       opacity: 0;
       transform: translateX(50px);
       transition: all 0.6s ease;
     }
-
     .slide-in-right.visible {
       opacity: 1;
       transform: translateX(0);
     }
-
     /* Scroll indicator */
     .scroll-indicator {
       position: fixed;
@@ -596,7 +525,6 @@
       z-index: 9999;
       transition: width 0.3s ease;
     }
-
     /* Loading screen */
     .loader {
       position: fixed;
@@ -612,14 +540,12 @@
       z-index: 9999;
       transition: opacity 0.5s ease;
     }
-
     .loader-text {
       font-family: 'JetBrains Mono', monospace;
       color: var(--text-accent);
       font-size: 1.2rem;
       margin-bottom: 2rem;
     }
-
     .loader-bar {
       width: 300px;
       height: 4px;
@@ -627,7 +553,6 @@
       border-radius: 2px;
       overflow: hidden;
     }
-
     .loader-progress {
       width: 0%;
       height: 100%;
@@ -635,12 +560,10 @@
       border-radius: 2px;
       animation: loadProgress 2s ease-out forwards;
     }
-
     @keyframes loadProgress {
       0% { width: 0%; }
       100% { width: 100%; }
     }
-
     /* Responsive */
     @media (max-width: 768px) {
       .section-title {
@@ -649,6 +572,7 @@
       .profile-image {
         width: 200px;
         height: 200px;
+        border-radius: 8px; /* Consistent square shape on mobile */
       }
       .glass-card {
         padding: 1.5rem;
@@ -657,13 +581,27 @@
         padding: 15px;
         font-size: 14px;
       }
+      .project-img {
+        height: 180px;
+      }
+      .skill-icon {
+        font-size: 2.5rem;
+      }
+      .social-link {
+        width: 45px;
+        height: 45px;
+        margin: 0 5px;
+      }
+      .btn-primary-custom, .btn-secondary-custom {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
 <body>
   <!-- Code Grid Background -->
   <div class="code-grid"></div>
-
   <!-- Loading Screen -->
   <div class="loader" id="loader">
     <div class="loader-text">Initializing Portfolio...</div>
@@ -671,10 +609,8 @@
       <div class="loader-progress"></div>
     </div>
   </div>
-
   <!-- Scroll Indicator -->
   <div class="scroll-indicator" id="scrollIndicator"></div>
-
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
     <div class="container">
@@ -687,14 +623,12 @@
           <li class="nav-item"><a class="nav-link" href="#hero">home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#analytics">analytics</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
-
   <!-- Hero Section -->
   <section id="hero" class="hero-section">
     <div class="container">
@@ -725,7 +659,6 @@
       </div>
     </div>
   </section>
-
   <!-- About Section -->
   <section id="about" class="section">
     <div class="container">
@@ -756,7 +689,6 @@
       </div>
     </div>
   </section>
-
   <!-- Skills Section -->
   <section id="skills" class="section">
     <div class="container">
@@ -764,7 +696,7 @@
       
       <!-- Programming Languages -->
       <div class="mb-5">
-        <h4 class="text-center mb-4" style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace;">// Programming Languages</h4>
+        <h4 class="text-center mb-4" style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace;">Programming Languages</h4>
         <div class="row g-4">
           <div class="col-lg-3 col-md-6">
             <div class="skill-item fade-in">
@@ -804,10 +736,9 @@
           </div>
         </div>
       </div>
-
       <!-- Frameworks & Libraries -->
       <div class="mb-5">
-        <h4 class="text-center mb-4" style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace;">// Frameworks & Libraries</h4>
+        <h4 class="text-center mb-4" style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace;">Frameworks & Libraries</h4>
         <div class="row g-4">
           <div class="col-lg-3 col-md-6">
             <div class="skill-item fade-in">
@@ -847,10 +778,9 @@
           </div>
         </div>
       </div>
-
       <!-- Databases & Tools -->
       <div class="mb-5">
-        <h4 class="text-center mb-4" style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace;">// Databases & Development Tools</h4>
+        <h4 class="text-center mb-4" style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace;">Databases & Development Tools</h4>
         <div class="row g-4">
           <div class="col-lg-3 col-md-6">
             <div class="skill-item fade-in">
@@ -890,10 +820,9 @@
           </div>
         </div>
       </div>
-
       <!-- Cloud & Deployment -->
       <div class="mb-5">
-        <h4 class="text-center mb-4" style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace;">// Cloud & Deployment Platforms</h4>
+        <h4 class="text-center mb-4" style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace;">Cloud & Deployment Platforms</h4>
         <div class="row g-4">
           <div class="col-lg-3 col-md-6">
             <div class="skill-item fade-in">
@@ -933,10 +862,9 @@
           </div>
         </div>
       </div>
-
       <!-- Operating Systems & Others -->
       <div class="mb-5">
-        <h4 class="text-center mb-4" style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace;">// Operating Systems & Others</h4>
+        <h4 class="text-center mb-4" style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace;">Operating Systems & Others</h4>
         <div class="row g-4">
           <div class="col-lg-3 col-md-6">
             <div class="skill-item fade-in">
@@ -978,124 +906,6 @@
       </div>
     </div>
   </section>
-
-  <!-- GitHub Analytics Section -->
-  <section id="analytics" class="section" style="background: linear-gradient(135deg, rgba(0, 255, 136, 0.05) 0%, rgba(0, 102, 255, 0.05) 100%);">
-    <div class="container">
-      <h2 class="section-title fade-in">GitHub Analytics</h2>
-      <div class="row g-4">
-        <!-- GitHub Stats -->
-        <div class="col-lg-6">
-          <div class="glass-card fade-in text-center">
-            <h4 class="mb-4" style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace;">📈 Contribution Stats</h4>
-            <img src="https://github-readme-stats.vercel.app/api?username=mr-adnan-adu&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&bg_color=1a1b27&title_color=7aa2f7&text_color=a9b1d6&icon_color=7dcfff&border_color=7dcfff&custom_title=GitHub%20Statistics" 
-                 alt="GitHub Stats" 
-                 style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid rgba(125, 207, 255, 0.2);" 
-                 loading="lazy" />
-          </div>
-        </div>
-        
-        <!-- Top Languages -->
-        <div class="col-lg-6">
-          <div class="glass-card fade-in text-center">
-            <h4 class="mb-4" style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace;">💻 Language Distribution</h4>
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mr-adnan-adu&theme=tokyonight&hide_border=true&layout=compact&bg_color=1a1b27&title_color=7aa2f7&text_color=a9b1d6&border_color=7dcfff&custom_title=Most%20Used%20Languages&langs_count=8" 
-                 alt="Top Languages" 
-                 style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid rgba(125, 207, 255, 0.2);" 
-                 loading="lazy" />
-          </div>
-        </div>
-      </div>
-      
-      <!-- GitHub Streak Stats -->
-      <div class="row mt-5">
-        <div class="col-lg-12">
-          <div class="glass-card fade-in text-center">
-            <h4 class="mb-4" style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace;">🔥 Streak Statistics</h4>
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=mr-adnan-adu&theme=tokyonight&hide_border=true&background=1a1b27&stroke=7dcfff&ring=7aa2f7&fire=ff9e64&currStreakNum=bb9af7&sideNums=7dcfff&currStreakLabel=7dcfff&sideLabels=a9b1d6&dates=9ece6a" 
-                 alt="GitHub Streak Stats" 
-                 style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid rgba(125, 207, 255, 0.2);" 
-                 loading="lazy" />
-          </div>
-        </div>
-      </div>
-      
-      <!-- GitHub Trophies -->
-      <div class="row mt-5">
-        <div class="col-12">
-          <div class="glass-card fade-in text-center">
-            <h4 class="mb-4" style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace;">🏆 GitHub Achievements</h4>
-            <img src="https://github-profile-trophy.vercel.app/?username=mr-adnan-adu&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4&column=4&row=2&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C" 
-                 alt="GitHub Trophies" 
-                 style="max-width: 100%; height: auto;" 
-                 loading="lazy" />
-          </div>
-        </div>
-      </div>
-      
-      <!-- Activity Graph -->
-      <div class="row mt-5">
-        <div class="col-12">
-          <div class="glass-card fade-in text-center">
-            <h4 class="mb-4" style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace;">📊 Contribution Graph</h4>
-            <img src="https://github-readme-activity-graph.vercel.app/graph?username=mr-adnan-adu&theme=tokyo-night&hide_border=true&area=true&bg_color=1a1b27&color=7dcfff&line=7aa2f7&point=bb9af7&area_color=7aa2f7&title_color=7aa2f7&custom_title=Annual%20Contribution%20Activity" 
-                 alt="Activity Graph" 
-                 style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid rgba(125, 207, 255, 0.2);" 
-                 loading="lazy" />
-          </div>
-        </div>
-      </div>
-      
-      <!-- GitHub Profile Summary -->
-      <div class="row mt-5">
-        <div class="col-lg-6">
-          <div class="glass-card fade-in text-center">
-            <h4 class="mb-4" style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace;">⚡ Profile Summary</h4>
-            <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mr-adnan-adu&theme=tokyonight" 
-                 alt="Profile Summary" 
-                 style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid rgba(125, 207, 255, 0.2);" 
-                 loading="lazy" />
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="glass-card fade-in text-center">
-            <h4 class="mb-4" style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace;">📅 Commit Calendar</h4>
-            <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=mr-adnan-adu&theme=tokyonight&utc_offset=5.5" 
-                 alt="Productive Time" 
-                 style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid rgba(125, 207, 255, 0.2);" 
-                 loading="lazy" />
-          </div>
-        </div>
-      </div>
-      
-      <!-- Live Profile Stats -->
-      <div class="text-center mt-5">
-        <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
-          <div class="glass-card" style="padding: 1rem; min-width: 120px;">
-            <div style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace; font-size: 1.5rem; font-weight: 700;" id="profileViews">
-              <i class="fas fa-eye me-2"></i>
-              <span>Live</span>
-            </div>
-            <div style="color: var(--text-secondary); font-size: 0.9rem;">Profile Views</div>
-          </div>
-          <div class="glass-card" style="padding: 1rem; min-width: 120px;">
-            <div style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace; font-size: 1.5rem; font-weight: 700;">
-              <i class="fab fa-github me-2"></i>
-              <span>Active</span>
-            </div>
-            <div style="color: var(--text-secondary); font-size: 0.9rem;">Status</div>
-          </div>
-        </div>
-        <a href="https://github.com/mr-adnan-adu" target="_blank" class="btn-primary-custom me-3">
-          <i class="fab fa-github me-2"></i>Visit My GitHub Profile
-        </a>
-        <a href="https://github.com/mr-adnan-adu?tab=repositories" target="_blank" class="btn-secondary-custom">
-          <i class="fas fa-code-branch me-2"></i>Browse Repositories
-        </a>
-      </div>
-    </div>
-  </section>
-
   <!-- Projects Section -->
   <section id="projects" class="section">
     <div class="container">
@@ -1114,8 +924,8 @@
                 <span class="tech-tag">Bootstrap</span>
               </div>
               <div class="d-flex gap-2 mt-3">
-                <a href="#" class="btn-primary-custom flex-fill text-center">Live Demo</a>
-                <a href="#" class="btn-secondary-custom">
+                <a href="https://github.com/mr-adnan-adu" target="_blank" class="btn-primary-custom flex-fill text-center">Live Demo</a>
+                <a href="https://github.com/mr-adnan-adu" target="_blank" class="btn-secondary-custom">
                   <i class="fab fa-github"></i>
                 </a>
               </div>
@@ -1135,8 +945,8 @@
                 <span class="tech-tag">API</span>
               </div>
               <div class="d-flex gap-2 mt-3">
-                <a href="#" class="btn-primary-custom flex-fill text-center">Live Demo</a>
-                <a href="#" class="btn-secondary-custom">
+                <a href="https://github.com/mr-adnan-adu" target="_blank" class="btn-primary-custom flex-fill text-center">Live Demo</a>
+                <a href="https://github.com/mr-adnan-adu" target="_blank" class="btn-secondary-custom">
                   <i class="fab fa-github"></i>
                 </a>
               </div>
@@ -1156,8 +966,8 @@
                 <span class="tech-tag">Animation</span>
               </div>
               <div class="d-flex gap-2 mt-3">
-                <a href="#" class="btn-primary-custom flex-fill text-center">Live Demo</a>
-                <a href="#" class="btn-secondary-custom">
+                <a href="https://github.com/mr-adnan-adu" target="_blank" class="btn-primary-custom flex-fill text-center">Live Demo</a>
+                <a href="https://github.com/mr-adnan-adu" target="_blank" class="btn-secondary-custom">
                   <i class="fab fa-github"></i>
                 </a>
               </div>
@@ -1172,7 +982,6 @@
       </div>
     </div>
   </section>
-
   <!-- Contact Section -->
   <section id="contact" class="section">
     <div class="container">
@@ -1183,7 +992,7 @@
             <h4 class="mb-4">Let's Connect</h4>
             <div class="code-block mb-4">
               <span style="color: #ff6b6b;">const</span> <span style="color: #4ecdc4;">contact</span> = {<br>
-              &nbsp;&nbsp;<span style="color: #feca57;">email</span>: <span style="color: #ff9ff3;">"adnanmuhammedkundukara@gmail.com"</span>,<br>
+              &nbsp;&nbsp;<span style="color: #feca57;">email</span>: <span style="color: #ff9ff3;">"adnanxpkd@gmail.com"</span>,<br>
               &nbsp;&nbsp;<span style="color: #feca57;">location</span>: <span style="color: #ff9ff3;">"Kerala, India"</span>,<br>
               &nbsp;&nbsp;<span style="color: #feca57;">availability</span>: <span style="color: #ff9ff3;">"Open for opportunities"</span><br>
               &nbsp;&nbsp;<span style="color: #feca57;">telegram contacts</span>: <span style="color: #ff9ff3;">"t.me/adnanxpkd"</span>,<br>
@@ -1240,7 +1049,6 @@
       </div>
     </div>
   </section>
-
   <!-- Footer -->
   <footer class="text-center py-4" style="background: rgba(10, 10, 15, 0.9); border-top: 1px solid var(--border-color);">
     <div class="container">
@@ -1254,19 +1062,21 @@
       </p>
     </div>
   </footer>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     // Loading screen with progress
     window.addEventListener('load', function() {
       setTimeout(() => {
-        document.getElementById('loader').style.opacity = '0';
-        setTimeout(() => {
-          document.getElementById('loader').style.display = 'none';
-        }, 500);
+        const loader = document.getElementById('loader');
+        if (loader) {
+          loader.style.opacity = '0';
+          setTimeout(() => {
+            loader.style.display = 'none';
+          }, 500);
+        }
       }, 2200);
     });
-
+    
     // Enhanced navbar scroll effect
     window.addEventListener('scroll', function() {
       const navbar = document.getElementById('navbar');
@@ -1278,13 +1088,13 @@
         navbar.classList.remove('scrolled');
       }
     });
-
+    
     // Smooth scroll indicator
     window.addEventListener('scroll', function() {
       const scrolled = (window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
       document.getElementById('scrollIndicator').style.width = scrolled + '%';
     });
-
+    
     // Enhanced smooth scrolling with offset
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
@@ -1299,13 +1109,12 @@
         }
       });
     });
-
+    
     // Intersection Observer for animations
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
     };
-
     const observer = new IntersectionObserver(function(entries) {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -1313,28 +1122,41 @@
         }
       });
     }, observerOptions);
-
+    
     // Observe all animated elements
     document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
       observer.observe(el);
     });
-
+    
     // Enhanced contact form handling
     const form = document.getElementById('contactForm');
     const result = document.getElementById('result');
-
     form.addEventListener('submit', function(e) {
       e.preventDefault();
       const formData = new FormData(form);
       const object = Object.fromEntries(formData);
       const json = JSON.stringify(object);
-
       result.innerHTML = `
         <div style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace;">
           <i class="fas fa-spinner fa-spin me-2"></i>Sending message...
         </div>
       `;
-
+      
+      // Simulate form submission for demonstration
+      setTimeout(() => {
+        result.innerHTML = `
+          <div style="color: var(--text-accent); font-family: 'JetBrains Mono', monospace;">
+            <i class="fas fa-check-circle me-2"></i>Message sent successfully!
+          </div>
+        `;
+        form.reset();
+        setTimeout(() => {
+          result.innerHTML = "";
+        }, 5000);
+      }, 1500);
+      
+      // Uncomment below for actual form submission
+      /*
       fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
@@ -1373,8 +1195,9 @@
           result.innerHTML = "";
         }, 5000);
       });
+      */
     });
-
+    
     // Floating code particles
     function createCodeParticle() {
       const particles = ['{}', '[]', '()', '<>', '/>', '++', '--', '=>', '===', '!=='];
@@ -1412,10 +1235,10 @@
       
       animation.onfinish = () => particle.remove();
     }
-
+    
     // Create particles periodically
     setInterval(createCodeParticle, 3000);
-
+    
     // Terminal typing effect restart
     function restartTypingAnimation() {
       const typingElement = document.querySelector('.typing-animation');
@@ -1426,7 +1249,7 @@
         }, 100);
       }
     }
-
+    
     // Restart typing animation when scrolling to hero
     let heroObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -1435,12 +1258,11 @@
         }
       });
     }, { threshold: 0.5 });
-
     const heroSection = document.getElementById('hero');
     if (heroSection) {
       heroObserver.observe(heroSection);
     }
-
+    
     // Keyboard shortcuts for navigation
     document.addEventListener('keydown', function(e) {
       if (e.altKey) {
@@ -1459,20 +1281,16 @@
             break;
           case '4':
             e.preventDefault();
-            document.getElementById('analytics').scrollIntoView({ behavior: 'smooth' });
-            break;
-          case '5':
-            e.preventDefault();
             document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
             break;
-          case '6':
+          case '5':
             e.preventDefault();
             document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
             break;
         }
       }
     });
-
+    
     // Console message for developers
     console.log(`
     %c
@@ -1483,7 +1301,7 @@
     ║     Portfolio by Muhammed Adnan K      ║
     ║                                        ║
     ║     Keyboard shortcuts:                ║
-    ║     Alt + 1-6 for quick navigation     ║
+    ║     Alt + 1-5 for quick navigation     ║
     ║                                        ║
     ╚════════════════════════════════════════╝
     `, 
