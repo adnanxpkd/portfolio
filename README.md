@@ -9,7 +9,7 @@ I'm a *self-taught Python Full Stack Developer* passionate about creating innova
 
 ### 🎯 Core Expertise
 - *Backend Development:* Python-based web applications and APIs
-- *Frontend Technologies:* Modern web interfaces with responsive design
+- *Frontend Technologies:* Modern web interfaces with responsive design 
 - *Bot Development:* Advanced Telegram bot creation and automation
 - *Database Management:* NoSQL and SQL database optimization
 - *Cloud & Deployment:* Scalable cloud infrastructure solutions
