@@ -54,6 +54,33 @@ window.addEventListener('scroll', () => {
     });
 });
 
+// Scroll Animations (Intersection Observer)
+const observerOptions = {
+    threshold: 0.2,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+
+            // Animate progress bars if they exist in this card
+            const progressBar = entry.target.querySelector('.progress-bar');
+            if (progressBar) {
+                const width = progressBar.getAttribute('data-width');
+                progressBar.style.width = width;
+            }
+
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.scroll-animate').forEach(el => {
+    observer.observe(el);
+});
+
 // Contact Form Handling (Simulation)
 const contactForm = document.getElementById('contactForm');
 const formResult = document.getElementById('formResult');
