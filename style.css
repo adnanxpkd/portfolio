@@ -771,11 +771,6 @@ img {
 
 
 /* --- Professional Journey Section --- */
-.journey-timeline {
-    position: relative;
-    padding-left: 2rem;
-}
-
 .journey-item {
     position: relative;
     margin-bottom: 3rem;
