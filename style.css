@@ -977,79 +977,150 @@ img {
     bottom: -35px;
 }
 
-.skills-grid {
+/* --- Learning Journey Section --- */
+.learning-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.subsection-title {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-main);
+}
+
+/* Focus Cards */
+.focus-cards {
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
 }
 
-.skill-card {
-    background: var(--bg-glass);
+.focus-card {
+    background: var(--bg-surface);
     border: 1px solid var(--border);
+    border-radius: 12px;
     padding: 1.5rem;
-    border-radius: 8px;
-    transition: all 0.3s;
+    display: flex;
+    gap: 1.5rem;
+    transition: all 0.3s var(--ease);
 }
 
-.skill-card:hover {
+.focus-card:hover {
     background: var(--bg-card);
     border-color: var(--primary);
+    transform: translateX(5px);
 }
 
-.skill-header {
+.focus-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--primary);
+    border-radius: 12px;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.focus-content h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    color: var(--text-main);
+}
+
+.focus-content p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+}
+
+.focus-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.focus-tags span {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    color: var(--text-secondary);
+    font-family: var(--font-code);
+}
+
+/* Progress Cards */
+.progress-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.progress-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s var(--ease);
+}
+
+.progress-card:hover {
+    border-color: var(--secondary);
+    transform: translateY(-3px);
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 1rem;
 }
 
-.skill-icon {
-    font-size: 1.5rem;
-    color: var(--primary);
+.tech-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 600;
+    color: var(--text-main);
 }
 
-.skill-name {
+.tech-info i {
+    font-size: 1.5rem;
+}
+
+.progress-percent {
     font-family: var(--font-code);
     font-weight: 700;
+    color: var(--text-secondary);
 }
 
-.skill-desc {
+.progress-bar-container {
+    width: 100%;
+    height: 8px;
+    background: var(--bg-card);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.75rem;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 1s ease-in-out;
+}
+
+.progress-goal {
     font-size: 0.85rem;
     color: var(--text-muted);
-}
-
-.table-container {
-    overflow-x: auto;
-    margin-top: 2rem;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: var(--font-code);
-    font-size: 0.9rem;
-}
-
-th,
-td {
-    padding: 1rem;
-    text-align: left;
-    border-bottom: 1px solid var(--border);
-}
-
-th {
-    background: var(--bg-surface);
-    color: var(--primary);
-}
-
-tr:last-child td {
-    border-bottom: none;
-}
-
-tr:hover {
-    background: var(--bg-glass);
+    font-style: italic;
 }
 
 /* --- Projects Section --- */
