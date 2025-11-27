@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Adnan K | Python Developer</title>
+    <meta name="description"
+        content="Portfolio of Muhammed Adnan K, a beginner Python developer learning Django and React from Kerala, India.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/image.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <canvas id="particleBg"></canvas>
+
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Adnan.dev</a>
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link">home</a></li>
+                <li><a href="#about" class="nav-link">about</a></li>
+                <li><a href="#skills" class="nav-link">skills</a></li>
+                <li><a href="#opensource" class="nav-link">open source</a></li>
+                <li><a href="#projects" class="nav-link">projects</a></li>
+                <li><a href="#contact" class="nav-link">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-subtitle">Python Developer | Learning Full-Stack</div>
+                <h1>Muhammed Adnan K</h1>
+
+                <p class="hero-desc">
+                    Beginner Python developer building a strong foundation in Django and React.
+                    Focused on creating functional projects, writing clean code, and growing into a confident full-stack
+                    engineer.
+                </p>
+
+                <!-- Social Badges -->
+                <div class="social-badges">
+                    <a href="https://linkedin.com/in/adnanxpkd" class="social-badge linkedin">
+                        <i class="fab fa-linkedin"></i> LINKEDIN
+                    </a>
+                    <a href="https://t.me/adnanxpkd" class="social-badge telegram">
+                        <i class="fab fa-telegram"></i> TELEGRAM
+                    </a>
+                    <a href="mailto:adnanxpkd@gmail.com" class="social-badge gmail">
+                        <i class="fas fa-envelope"></i> GMAIL
+                    </a>
+                    <a href="https://instagram.com/adnanxpkd" class="social-badge instagram">
+                        <i class="fab fa-instagram"></i> INSTAGRAM
+                    </a>
+                    <a href="https://github.com/adnanxpkd" class="social-badge github">
+                        <i class="fab fa-github"></i> GITHUB
+                    </a>
+                </div>
+
+                <!-- Stats Badges -->
+                <div class="stats-badges">
+                    <div class="stat-badge">
+                        <span class="stat-label">PROFILE VIEWS</span>
+                        <span class="stat-value">1,136</span>
+                    </div>
+                    <div class="stat-badge">
+                        <span class="stat-label">FOLLOWERS</span>
+                        <span class="stat-value">13</span>
+                    </div>
+                    <div class="stat-badge">
+                        <span class="stat-label">STARS</span>
+                        <span class="stat-value">235</span>
+                    </div>
+                </div>
+
+                <div class="flex" style="flex-wrap: wrap;">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-img-container">
+                    <div class="profile-img-bg"></div>
+                    <img src="images/image.png" alt="Muhammed Adnan K" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="text-muted" style="margin-bottom: 1.5rem; font-size: 1.1rem;">
+                        I'm a beginner Python developer with a solid foundation in Python and Django.
+                        Currently learning React to become a full-stack engineer. I enjoy building simple,
+                        functional projects that help me enhance my problem-solving skills and develop clean coding
+                        habits.
+                    </p>
+
+                    <h4 class="font-code text-primary" style="margin-top: 2rem; font-size: 1.1rem;">What I'm Learning
+                    </h4>
+                    <div class="building-list text-muted">
+                        <div class="building-item">Building <strong>Django REST APIs</strong> for backend development
+                        </div>
+                        <div class="building-item">Learning <strong>React</strong> for frontend interfaces</div>
+                        <div class="building-item">Exploring <strong>n8n automation</strong> workflows</div>
+                        <div class="building-item">Improving <strong>communication & collaboration</strong> skills</div>
+                        <div class="building-item">Preparing for <strong>technical interviews</strong></div>
+                    </div>
+                </div>
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                        <span style="margin-left: 10px; font-size: 12px; color: #888;">developer.py</span>
+                    </div>
+                    <div class="window-content">
+                        <pre><code><span class="keyword">class</span> <span class="class-name">BeginnerDeveloper</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(<span class="property">self</span>):
+        <span class="property">self</span>.name = <span class="string">"Muhammed Adnan K"</span>
+        <span class="property">self</span>.location = <span class="string">"Kerala, India 🇮🇳"</span>
+        <span class="property">self</span>.role = <span class="string">"Beginner Python Developer"</span>
+        <span class="property">self</span>.learning = [<span class="string">"Django"</span>, <span class="string">"React"</span>, <span class="string">"REST APIs"</span>]
+        <span class="property">self</span>.goal = <span class="string">"Becoming a Full-Stack Engineer"</span>
+    
+    <span class="keyword">def</span> <span class="function">current_stack</span>(<span class="property">self</span>):
+        <span class="keyword">return</span> {
+            <span class="string">"Backend"</span>: [<span class="string">"Python"</span>, <span class="string">"Django"</span>, <span class="string">"REST APIs"</span>],
+            <span class="string">"Frontend"</span>: [<span class="string">"HTML"</span>, <span class="string">"CSS"</span>, <span class="string">"JavaScript"</span>, <span class="string">"React (learning)"</span>],
+            <span class="string">"Tools"</span>: [<span class="string">"Git"</span>, <span class="string">"n8n"</span>, <span class="string">"VS Code"</span>]
+        }
+    
+    <span class="keyword">def</span> <span class="function">daily_goals</span>(<span class="property">self</span>):
+        <span class="keyword">return</span> [
+            <span class="string">"Learn something new"</span>,
+            <span class="string">"Build functional projects"</span>,
+            <span class="string">"Write clean code"</span>,
+            <span class="string">"Stay consistent"</span>
+        ]
+
+dev = BeginnerDeveloper()
+<span class="function">print</span>(dev.goal)  <span class="comment"># Becoming a Full-Stack Engineer</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section" style="background: rgba(255,255,255,0.01);">
+        <div class="container">
+            <h2 class="section-title">Tech Stack & Learning</h2>
+
+            <!-- Core Technologies -->
+            <div style="margin-bottom: 4rem;">
+                <h4 class="font-code text-secondary text-center"
+                    style="margin-bottom: 2rem; font-size: 0.95rem; letter-spacing: 0.05em;">Core Technologies</h4>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                            alt="Python" class="tech-icon">
+                        <span class="tech-name">Python</span>
+                    </div>
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                            alt="Django" class="tech-icon">
+                        <span class="tech-name">Django</span>
+                    </div>
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="JavaScript" class="tech-icon">
+                        <span class="tech-name">JavaScript</span>
+                    </div>
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="HTML5" class="tech-icon">
+                        <span class="tech-name">HTML5</span>
+                    </div>
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
+                            class="tech-icon">
+                        <span class="tech-name">CSS3</span>
+                    </div>
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                            alt="React" class="tech-icon">
+                        <span class="tech-name">React</span>
+                    </div>
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
+                            class="tech-icon">
+                        <span class="tech-name">Git</span>
+                    </div>
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                            alt="VS Code" class="tech-icon">
+                        <span class="tech-name">VS Code</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning & Exploring -->
+            <div style="margin-bottom: 4rem;">
+                <h4 class="font-code text-secondary text-center"
+                    style="margin-bottom: 2rem; font-size: 0.95rem; letter-spacing: 0.05em;">Learning & Exploring</h4>
+                <div class="tech-grid" style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));">
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                            alt="Node.js" class="tech-icon">
+                        <span class="tech-name">Node.js</span>
+                    </div>
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                            alt="PostgreSQL" class="tech-icon">
+                        <span class="tech-name">PostgreSQL</span>
+                    </div>
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                            alt="MongoDB" class="tech-icon">
+                        <span class="tech-name">MongoDB</span>
+                    </div>
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                            alt="Docker" class="tech-icon">
+                        <span class="tech-name">Docker</span>
+                    </div>
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                            alt="Linux" class="tech-icon">
+                        <span class="tech-name">Linux</span>
+                    </div>
+                    <div class="tech-card">
+                        <img src="https://www.svgrepo.com/show/354202/postman-icon.svg" alt="Postman" class="tech-icon">
+                        <span class="tech-name">Postman</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Focus Areas -->
+            <div style="margin-top: 4rem;">
+                <h3 class="text-center font-code text-primary" style="margin-bottom: 2rem;">Learning Focus</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header"><i class="fas fa-server skill-icon"></i><span
+                                class="skill-name">Backend Development</span></div>
+                        <ul class="text-muted" style="padding-left: 1.2rem; list-style: disc;">
+                            <li>Python & Django</li>
+                            <li>REST APIs</li>
+                            <li>Database basics</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header"><i class="fas fa-paint-brush skill-icon"></i><span
+                                class="skill-name">Frontend Learning</span></div>
+                        <ul class="text-muted" style="padding-left: 1.2rem; list-style: disc;">
+                            <li>HTML, CSS, JS</li>
+                            <li>React fundamentals</li>
+                            <li>Responsive design</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header"><i class="fas fa-robot skill-icon"></i><span
+                                class="skill-name">Automation</span></div>
+                        <ul class="text-muted" style="padding-left: 1.2rem; list-style: disc;">
+                            <li>n8n workflows</li>
+                            <li>Python scripts</li>
+                            <li>Process automation</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header"><i class="fas fa-users skill-icon"></i><span class="skill-name">Soft
+                                Skills</span></div>
+                        <ul class="text-muted" style="padding-left: 1.2rem; list-style: disc;">
+                            <li>Communication</li>
+                            <li>Collaboration</li>
+                            <li>Problem-solving</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Currently Learning Table -->
+            <div style="margin-top: 4rem;">
+                <h3 class="font-code text-secondary">🌱 Currently Learning</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Technology</th>
+                                <th>Progress</th>
+                                <th>Goal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>🐍 Django & REST APIs</td>
+                                <td>
+                                    <div class="flex-center" style="justify-content: flex-start; gap: 10px;">
+                                        <div style="width: 100px; height: 6px; background: #222; border-radius: 3px;">
+                                            <div
+                                                style="width: 60%; height: 100%; background: var(--primary); border-radius: 3px;">
+                                            </div>
+                                        </div>
+                                        60%
+                                    </div>
+                                </td>
+                                <td>Build REST APIs</td>
+                            </tr>
+                            <tr>
+                                <td>⚛️ React Fundamentals</td>
+                                <td>
+                                    <div class="flex-center" style="justify-content: flex-start; gap: 10px;">
+                                        <div style="width: 100px; height: 6px; background: #222; border-radius: 3px;">
+                                            <div
+                                                style="width: 40%; height: 100%; background: var(--secondary); border-radius: 3px;">
+                                            </div>
+                                        </div>
+                                        40%
+                                    </div>
+                                </td>
+                                <td>Frontend Development</td>
+                            </tr>
+                            <tr>
+                                <td>🔄 n8n Automation</td>
+                                <td>
+                                    <div class="flex-center" style="justify-content: flex-start; gap: 10px;">
+                                        <div style="width: 100px; height: 6px; background: #222; border-radius: 3px;">
+                                            <div
+                                                style="width: 30%; height: 100%; background: var(--accent); border-radius: 3px;">
+                                            </div>
+                                        </div>
+                                        30%
+                                    </div>
+                                </td>
+                                <td>Workflow Automation</td>
+                            </tr>
+                            <tr>
+                                <td>💬 Communication Skills</td>
+                                <td>
+                                    <div class="flex-center" style="justify-content: flex-start; gap: 10px;">
+                                        <div style="width: 100px; height: 6px; background: #222; border-radius: 3px;">
+                                            <div
+                                                style="width: 50%; height: 100%; background: var(--success); border-radius: 3px;">
+                                            </div>
+                                        </div>
+                                        50%
+                                    </div>
+                                </td>
+                                <td>Interview Ready</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Activity Section -->
+    <section id="opensource" class="section">
+        <div class="container">
+            <h2 class="section-title">Learning Journey & Progress</h2>
+
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <div class="card text-center">
+                    <div style="font-size: 3rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">100+
+                    </div>
+                    <div style="font-size: 1.1rem; color: var(--text-secondary); font-weight: 600;">Days Coding</div>
+                    <div style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">Consistent learning
+                    </div>
+                </div>
+
+                <div class="card text-center">
+                    <div style="font-size: 3rem; font-weight: 800; color: var(--secondary); margin-bottom: 0.5rem;">10+
+                    </div>
+                    <div style="font-size: 1.1rem; color: var(--text-secondary); font-weight: 600;">Projects</div>
+                    <div style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">Practice builds</div>
+                </div>
+
+                <div class="card text-center">
+                    <div style="font-size: 3rem; font-weight: 800; color: var(--accent); margin-bottom: 0.5rem;">3+
+                    </div>
+                    <div style="font-size: 1.1rem; color: var(--text-secondary); font-weight: 600;">Technologies</div>
+                    <div style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">Python, Django, React
+                    </div>
+                </div>
+
+                <div class="card text-center">
+                    <div style="font-size: 3rem; font-weight: 800; color: var(--primary-light); margin-bottom: 0.5rem;">
+                        ∞</div>
+                    <div style="font-size: 1.1rem; color: var(--text-secondary); font-weight: 600;">Learning</div>
+                    <div style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">Never stop growing
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem; text-align: center;">
+                <a href="https://github.com/adnanxpkd" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-github"></i> View GitHub Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section" style="background: rgba(255,255,255,0.01);">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="card project-card">
+                    <div class="project-img-wrapper">
+                        <img src="images/Task 4 web clone.jpg" alt="Modern Web Clone" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Modern Web Clone</h3>
+                        <p class="project-desc">A pixel-perfect clone of a modern website featuring advanced CSS
+                            animations, responsive design, and optimized performance.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/adnanxpkd" target="_blank" class="btn btn-primary"
+                                style="flex: 1; justify-content: center;">Live Demo</a>
+                            <a href="https://github.com/adnanxpkd" target="_blank" class="btn btn-outline">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card project-card">
+                    <div class="project-img-wrapper">
+                        <img src="images/w3school.png" alt="Interactive Learning Platform" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Interactive Learning Platform</h3>
+                        <p class="project-desc">Educational platform with modern UI/UX design, interactive code
+                            examples, and progressive learning modules.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/adnanxpkd" target="_blank" class="btn btn-primary"
+                                style="flex: 1; justify-content: center;">Live Demo</a>
+                            <a href="https://github.com/adnanxpkd" target="_blank" class="btn btn-outline">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card project-card">
+                    <div class="project-img-wrapper">
+                        <img src="images/website.png" alt="Professional Portfolio" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Professional Portfolio</h3>
+                        <p class="project-desc">A fully responsive portfolio website showcasing modern web development
+                            techniques and creative design patterns.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Animation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/adnanxpkd" target="_blank" class="btn btn-primary"
+                                style="flex: 1; justify-content: center;">Live Demo</a>
+                            <a href="https://github.com/adnanxpkd" target="_blank" class="btn btn-outline">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-center" style="margin-top: 3rem;">
+                <a href="https://github.com/adnanxpkd" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-github"></i> View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="card" style="height: 100%;">
+                        <h3 style="margin-bottom: 2rem;">Let's Connect</h3>
+                        <div class="flex-col" style="gap: 1.5rem;">
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <h5 style="margin-bottom: 0.2rem; font-size: 0.9rem; color: var(--text-muted);">
+                                        Email</h5>
+                                    <a href="mailto:adnanxpkd@gmail.com" class="text-main">adnanxpkd@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fab fa-telegram"></i></div>
+                                <div>
+                                    <h5 style="margin-bottom: 0.2rem; font-size: 0.9rem; color: var(--text-muted);">
+                                        Telegram</h5>
+                                    <a href="https://t.me/adnanxpkd" target="_blank"
+                                        class="text-main">t.me/adnanxpkd</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-users"></i></div>
+                                <div>
+                                    <h5 style="margin-bottom: 0.2rem; font-size: 0.9rem; color: var(--text-muted);">
+                                        Community</h5>
+                                    <a href="https://t.me/AITechWaveML" target="_blank" class="text-main">AiTechWaveML
+                                        (10K+ Members)</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: auto; padding-top: 2rem;">
+                            <h5 style="margin-bottom: 1rem; font-size: 0.9rem; color: var(--text-muted);">Social
+                                Profiles</h5>
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/adnanxpkd" target="_blank" class="social-btn"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="https://t.me/adnanxpkd" target="_blank" class="social-btn"><i
+                                        class="fab fa-telegram"></i></a>
+                                <a href="https://www.linkedin.com/in/muhammed-adnan-k-88b612281/" target="_blank"
+                                    class="social-btn"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://x.com/adnanxpkd" target="_blank" class="social-btn"><i
+                                        class="fab fa-x-twitter"></i></a>
+                                <a href="https://github.com/adnanxpkd" target="_blank" class="social-btn"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <div class="card">
+                        <h3 style="margin-bottom: 1.5rem;">Send Message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name"
+                                    style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"
+                                    style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="your@email.com"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message"
+                                    style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">Message</label>
+                                <textarea id="message" class="form-control" placeholder="Tell me about your project..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                            <div id="formResult" style="margin-top: 1rem; text-align: center; font-size: 0.9rem;"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="font-code text-primary" style="margin-bottom: 1.5rem; font-size: 0.9rem;">
+                console.log("Thanks for visiting! 🚀");
+            </div>
+
+            <p class="footer-text">
+                &copy; 2025 Muhammed Adnan K • Crafted with passion and dedication
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
