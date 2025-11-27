@@ -773,6 +773,17 @@ img {
 
 /* --- Skills Section --- */
 /* --- Tech Stack Section --- */
+#particleBg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    background: transparent;
+}
+
 .tech-stack-container {
     display: flex;
     flex-direction: column;
