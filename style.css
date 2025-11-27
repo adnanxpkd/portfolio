@@ -770,88 +770,9 @@ img {
 
 
 
-/* --- Professional Journey Section --- */
-.journey-item {
-    position: relative;
-    margin-bottom: 3rem;
-    padding-left: 2rem;
-}
 
-.journey-item::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, var(--primary) 0%, transparent 100%);
-}
 
-.journey-item::after {
-    content: '';
-    position: absolute;
-    left: -4px;
-    top: 8px;
-    width: 10px;
-    height: 10px;
-    background: var(--primary);
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px var(--bg-body), 0 0 0 6px var(--primary-dim);
-}
 
-.journey-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.journey-role {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--text-main);
-}
-
-.journey-date {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    font-family: var(--font-code);
-}
-
-.journey-company {
-    font-size: 1rem;
-    color: var(--primary);
-    margin-bottom: 1rem;
-}
-
-.journey-desc {
-    color: var(--text-muted);
-    line-height: 1.7;
-    margin-bottom: 1rem;
-}
-
-.journey-list {
-    list-style: none;
-    padding-left: 0;
-}
-
-.journey-list li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.75rem;
-    color: var(--text-muted);
-    line-height: 1.6;
-}
-
-.journey-list li::before {
-    content: '▹';
-    position: absolute;
-    left: 0;
-    color: var(--primary);
-    font-weight: bold;
-}
 
 
 /* --- Skills Section --- */
