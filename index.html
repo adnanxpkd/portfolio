@@ -788,6 +788,50 @@
 
     <!-- Scripts -->
     <script src="script.js"></script>
+    
+    <!-- Formspree Formbutton Widget -->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+        /* Formspree Formbutton Configuration */
+        window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
+        
+        formbutton("create", {
+            action: "https://formspree.io/f/xkglbgna",
+            title: "Get In Touch",
+            fields: [
+                {
+                    type: "text",
+                    label: "Name:",
+                    name: "name",
+                    required: true,
+                    placeholder: "Your Name"
+                },
+                {
+                    type: "email",
+                    label: "Email:",
+                    name: "email",
+                    required: true,
+                    placeholder: "your@email.com"
+                },
+                {
+                    type: "textarea",
+                    label: "Message:",
+                    name: "message",
+                    required: true,
+                    placeholder: "Tell me about your project..."
+                },
+                { type: "submit" }
+            ],
+            styles: {
+                title: {
+                    backgroundColor: "#3B82F6"
+                },
+                button: {
+                    backgroundColor: "#3B82F6"
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
