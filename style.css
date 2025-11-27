@@ -768,45 +768,7 @@ img {
 
 /* End of About Section Upgrade */
 
-.learning-item:hover {
-    background: var(--bg-card-hover);
-    border-color: var(--border-light);
-    transform: translateX(8px);
-}
 
-.learning-item i {
-    font-size: 1.2rem;
-    flex-shrink: 0;
-    margin-top: 0.2rem;
-}
-
-.learning-item span {
-    line-height: 1.6;
-}
-
-.learning-item strong {
-    color: var(--text-secondary);
-    font-weight: 600;
-}
-
-.building-list {
-    margin-top: 2rem;
-    border-left: 2px solid var(--primary);
-    padding-left: 1.5rem;
-}
-
-.building-item {
-    margin-bottom: 1rem;
-    position: relative;
-}
-
-.building-item::before {
-    content: '>';
-    position: absolute;
-    left: -1.5rem;
-    color: var(--primary);
-    font-family: var(--font-code);
-}
 
 /* --- Professional Journey Section --- */
 .journey-timeline {
