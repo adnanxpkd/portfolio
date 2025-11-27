@@ -12,7 +12,7 @@ A modern, responsive, and interactive portfolio website showcasing my journey as
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-[View Demo](http://localhost:8000) • [Report Bug](https://github.com/adnanxpkd/portfolio/issues) • [Request Feature](https://github.com/adnanxpkd/portfolio/issues)
+[View Demo](https://adnanxpkd.vercel.app/) • [Report Bug](https://github.com/adnanxpkd/portfolio/issues) • [Request Feature](https://github.com/adnanxpkd/portfolio/issues)
 
 </div>
 
