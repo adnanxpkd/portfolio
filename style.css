@@ -867,114 +867,99 @@ img {
     background: transparent;
 }
 
-.tech-stack-container {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    max-width: 900px;
-    margin: 0 auto;
+/* --- Tech Stack Section --- */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-.tech-category {
-    background: var(--bg-card);
+.tech-card {
+    background: var(--bg-surface);
     border: 1px solid var(--border);
     border-radius: 16px;
     padding: 2rem;
-    position: relative;
-    overflow: hidden;
     transition: all 0.3s var(--ease);
-}
-
-.tech-category:hover {
-    border-color: var(--primary);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.tech-category::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary), var(--secondary));
-    opacity: 0.7;
-}
-
-.category-title {
-    font-size: 1.1rem;
-    color: var(--text-muted);
-    text-align: center;
-    margin-bottom: 2rem;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-}
-
-.tech-row {
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
+    flex-direction: column;
 }
 
-.tech-item {
-    width: 60px;
-    height: 60px;
-    background: var(--bg-surface);
+.tech-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.tech-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.tech-icon-wrapper {
+    width: 48px;
+    height: 48px;
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 1px solid transparent;
-    position: relative;
+    font-size: 1.25rem;
+}
+
+.tech-header h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: var(--text-main);
+}
+
+.tech-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 12px;
+    transition: all 0.3s var(--ease);
+    cursor: pointer;
+}
+
+.tech-item:hover {
+    background: var(--bg-card);
+    transform: translateY(-3px);
 }
 
 .tech-item img {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
     transition: all 0.3s var(--ease);
 }
 
-.tech-item:hover {
-    transform: translateY(-8px) scale(1.1);
-    background: var(--bg-card-hover);
-    border-color: var(--primary);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 15px var(--primary-glow);
-    z-index: 10;
-}
-
 .tech-item:hover img {
-    transform: scale(1.2);
-    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
 }
 
-/* Tooltip on hover */
-.tech-item::after {
-    content: attr(title);
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--bg-surface);
+.tech-item span {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    transition: all 0.3s var(--ease);
+}
+
+.tech-item:hover span {
     color: var(--text-main);
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 0.75rem;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.2s var(--ease);
-    border: 1px solid var(--border);
-    pointer-events: none;
-}
-
-.tech-item:hover::after {
-    opacity: 1;
-    visibility: visible;
-    bottom: -35px;
 }
 
 /* --- Learning Journey Section --- */
@@ -1694,14 +1679,15 @@ footer {
         gap: 1rem;
     }
 
-    .tech-item {
-        width: 50px;
-        height: 50px;
+    /* Tech Stack - Adjust for mobile */
+    .tech-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
-    .tech-item img {
-        width: 28px;
-        height: 28px;
+    .tech-list {
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
     }
 
     /* About Section - Stack on mobile */
