@@ -541,24 +541,41 @@ img {
 
 .code-window {
     background: #1e1e1e;
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6),
+        0 0 1px rgba(255, 255, 255, 0.1);
     font-family: var(--font-code);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .window-header {
     background: #2d2d2d;
-    padding: 10px 15px;
+    padding: 12px 16px;
     display: flex;
+    align-items: center;
     gap: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.window-filename {
+    margin-left: 10px;
+    font-size: 0.75rem;
+    color: #888;
+    font-family: var(--font-code);
+    letter-spacing: 0.02em;
 }
 
 .dot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
+    transition: transform 0.2s var(--ease);
+}
+
+.dot:hover {
+    transform: scale(1.2);
 }
 
 .dot.red {
@@ -574,10 +591,11 @@ img {
 }
 
 .window-content {
-    padding: 20px;
+    padding: 24px;
     color: #d4d4d4;
-    line-height: 1.6;
+    line-height: 1.7;
     overflow-x: auto;
+    max-height: 500px;
 }
 
 .keyword {
@@ -606,6 +624,45 @@ img {
 
 .comment {
     color: #6a9955;
+}
+
+.learning-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.learning-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: all 0.3s var(--ease);
+    color: var(--text-muted);
+}
+
+.learning-item:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--border-light);
+    transform: translateX(8px);
+}
+
+.learning-item i {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+
+.learning-item span {
+    line-height: 1.6;
+}
+
+.learning-item strong {
+    color: var(--text-secondary);
+    font-weight: 600;
 }
 
 .building-list {
