@@ -1248,6 +1248,17 @@ footer {
     .social-badges {
         justify-content: center;
     }
+
+    /* Projects Grid - 2 columns on tablet */
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    /* Personality Grid - 2 columns on tablet */
+    .personality-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -1263,6 +1274,7 @@ footer {
         border-bottom: 1px solid var(--border);
         transform: translateY(-150%);
         transition: transform 0.3s var(--ease);
+        z-index: 999;
     }
 
     .nav-links.active {
@@ -1274,10 +1286,187 @@ footer {
     }
 
     .section-title {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 
     .hero-content h1 {
         font-size: 2.5rem;
+    }
+
+    /* Projects Grid - 1 column on mobile */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Tech Stack - Adjust for mobile */
+    .tech-stack-container {
+        gap: 2rem;
+    }
+
+    .tech-row {
+        gap: 1rem;
+    }
+
+    .tech-item {
+        width: 50px;
+        height: 50px;
+    }
+
+    .tech-item img {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* About Section - Stack on mobile */
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .personality-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Stats Badges - Stack on mobile */
+    .stats-badges {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .stat-badge {
+        width: 100%;
+    }
+
+    /* Social Badges - Wrap on mobile */
+    .social-badges {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .social-badge {
+        flex: 1 1 calc(50% - 0.5rem);
+        min-width: 140px;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Contact Form */
+    .contact-container {
+        gap: 2rem;
+    }
+
+    /* Project Card Adjustments */
+    .project-img-wrapper {
+        height: 200px;
+    }
+
+    .project-content {
+        padding: 1.5rem;
+    }
+
+    .project-title {
+        font-size: 1.15rem;
+    }
+
+    .learning-highlights {
+        padding: 0.75rem;
+    }
+
+    .learning-highlights ul {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Extra small devices */
+    .container {
+        padding: 0 1rem;
+    }
+
+    .section {
+        padding: 3rem 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    /* Tech Stack - Smaller icons */
+    .tech-item {
+        width: 45px;
+        height: 45px;
+    }
+
+    .tech-item img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .category-title {
+        font-size: 0.95rem;
+    }
+
+    /* Social Badges - Full width */
+    .social-badge {
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* Project Tags */
+    .project-tags {
+        gap: 0.5rem;
+    }
+
+    .tag {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.75rem;
+    }
+
+    /* Timeline adjustments */
+    .timeline {
+        padding-left: 1rem;
+    }
+
+    .timeline-dot {
+        left: -1.45rem;
+        width: 12px;
+        height: 12px;
+    }
+
+    /* Profile Image */
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Form inputs */
+    .form-control {
+        font-size: 0.95rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 3rem 0 2rem;
+        margin-top: 4rem;
     }
 }
