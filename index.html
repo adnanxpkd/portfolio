@@ -116,98 +116,70 @@
     <section id="about" class="section">
         <div class="container">
             <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p class="text-muted" style="margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.8;">
-                        I'm a beginner Python developer with a solid foundation in Python and Django.
-                        Currently learning React to become a full-stack engineer. I enjoy building simple,
-                        functional projects that help me enhance my problem-solving skills and develop clean coding
-                        habits.
+
+            <div class="about-wrapper">
+                <!-- Left Column: Story & Timeline -->
+                <div class="about-story">
+                    <h3 class="story-title">My Coding Journey</h3>
+                    <p class="story-text">
+                        My journey into tech started with a curiosity about how things work behind the scenes.
+                        What began as simple Python scripts has evolved into a passion for building robust web
+                        applications.
+                        I believe in <strong>learning by doing</strong> and am constantly challenging myself with new
+                        technologies.
                     </p>
 
-                    <h4 class="font-code text-primary"
-                        style="margin-bottom: 1.5rem; font-size: 1rem; letter-spacing: 0.05em;">What I'm Learning</h4>
-                    <div class="learning-list">
-                        <div class="learning-item">
-                            <i class="fas fa-server" style="color: var(--primary);"></i>
-                            <span>Building <strong>Django REST APIs</strong> for backend development</span>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2024 - Present</span>
+                                <h4>Full-Stack Transition</h4>
+                                <p>Diving deep into React and modern frontend ecosystems while mastering Django REST
+                                    Framework.</p>
+                            </div>
                         </div>
-                        <div class="learning-item">
-                            <i class="fab fa-react" style="color: var(--primary);"></i>
-                            <span>Learning <strong>React</strong> for frontend interfaces</span>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2023</span>
+                                <h4>Python Foundation</h4>
+                                <p>Mastered core Python concepts, OOP, and built first backend projects with Django.</p>
+                            </div>
                         </div>
-                        <div class="learning-item">
-                            <i class="fas fa-robot" style="color: var(--primary);"></i>
-                            <span>Exploring <strong>n8n automation</strong> workflows</span>
-                        </div>
-                        <div class="learning-item">
-                            <i class="fas fa-users" style="color: var(--primary);"></i>
-                            <span>Improving <strong>communication & collaboration</strong> skills</span>
-                        </div>
-                        <div class="learning-item">
-                            <i class="fas fa-code" style="color: var(--primary);"></i>
-                            <span>Preparing for <strong>technical interviews</strong></span>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">The Beginning</span>
+                                <h4>Hello World</h4>
+                                <p>Wrote my first line of code and fell in love with the logic and creativity of
+                                    programming.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="developer-profile">
-                    <div class="profile-card">
-                        <div class="profile-card-header">
-                            <i class="fas fa-user-circle" style="color: var(--primary);"></i>
-                            <h4>Developer Profile</h4>
-                        </div>
-                        <div class="profile-info">
-                            <div class="info-row">
-                                <span class="info-label">Name:</span>
-                                <span class="info-value">Muhammed Adnan K</span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label">Location:</span>
-                                <span class="info-value">Kerala, India 🇮🇳</span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label">Role:</span>
-                                <span class="info-value">Beginner Python Developer</span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label">Goal:</span>
-                                <span class="info-value">Full-Stack Engineer</span>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="profile-card">
-                        <div class="profile-card-header">
-                            <i class="fas fa-code" style="color: var(--secondary);"></i>
-                            <h4>Current Stack</h4>
-                        </div>
-                        <div class="stack-list">
-                            <div class="stack-category">
-                                <span class="category-name">Backend:</span>
-                                <span class="category-items">Python, Django, REST APIs</span>
-                            </div>
-                            <div class="stack-category">
-                                <span class="category-name">Frontend:</span>
-                                <span class="category-items">HTML, CSS, JavaScript, React</span>
-                            </div>
-                            <div class="stack-category">
-                                <span class="category-name">Tools:</span>
-                                <span class="category-items">Git, n8n, VS Code</span>
-                            </div>
-                        </div>
+                <!-- Right Column: Personality Grid -->
+                <div class="personality-grid">
+                    <div class="personality-card">
+                        <div class="p-icon"><i class="fas fa-brain"></i></div>
+                        <h4>Problem Solver</h4>
+                        <p>I enjoy breaking down complex problems into manageable, logical steps.</p>
                     </div>
-
-                    <div class="profile-card">
-                        <div class="profile-card-header">
-                            <i class="fas fa-bullseye" style="color: var(--accent);"></i>
-                            <h4>Daily Goals</h4>
-                        </div>
-                        <div class="goals-list">
-                            <div class="goal-item">✓ Learn something new</div>
-                            <div class="goal-item">✓ Build functional projects</div>
-                            <div class="goal-item">✓ Write clean code</div>
-                            <div class="goal-item">✓ Stay consistent</div>
-                        </div>
+                    <div class="personality-card">
+                        <div class="p-icon"><i class="fas fa-rocket"></i></div>
+                        <h4>Fast Learner</h4>
+                        <p>Adapting to new tools and frameworks is part of my daily routine.</p>
+                    </div>
+                    <div class="personality-card">
+                        <div class="p-icon"><i class="fas fa-users"></i></div>
+                        <h4>Team Player</h4>
+                        <p>I value clear communication and collaborative growth in any project.</p>
+                    </div>
+                    <div class="personality-card">
+                        <div class="p-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h4>Creative Mind</h4>
+                        <p>Coding is my canvas; I strive to write clean, elegant, and efficient code.</p>
                     </div>
                 </div>
             </div>
