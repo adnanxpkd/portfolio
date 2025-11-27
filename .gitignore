@@ -1,0 +1,9 @@
+autopush.sh
+autopush.sh.save
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+.vscode/
+.idea/
+*.log
