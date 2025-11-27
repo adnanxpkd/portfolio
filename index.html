@@ -150,39 +150,64 @@
                         </div>
                     </div>
                 </div>
-                <div class="code-window">
-                    <div class="window-header">
-                        <div class="dot red"></div>
-                        <div class="dot yellow"></div>
-                        <div class="dot green"></div>
-                        <span class="window-filename">developer.py</span>
+                <div class="developer-profile">
+                    <div class="profile-card">
+                        <div class="profile-card-header">
+                            <i class="fas fa-user-circle" style="color: var(--primary);"></i>
+                            <h4>Developer Profile</h4>
+                        </div>
+                        <div class="profile-info">
+                            <div class="info-row">
+                                <span class="info-label">Name:</span>
+                                <span class="info-value">Muhammed Adnan K</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Location:</span>
+                                <span class="info-value">Kerala, India 🇮🇳</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Role:</span>
+                                <span class="info-value">Beginner Python Developer</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Goal:</span>
+                                <span class="info-value">Full-Stack Engineer</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="window-content">
-                        <pre><code><span class="keyword">class</span> <span class="class-name">BeginnerDeveloper</span>:
-    <span class="keyword">def</span> <span class="function">__init__</span>(<span class="property">self</span>):
-        <span class="property">self</span>.name = <span class="string">"Muhammed Adnan K"</span>
-        <span class="property">self</span>.location = <span class="string">"Kerala, India"</span> <span class="keyword">+</span> <span class="string">" 🇮🇳"</span>
-        <span class="property">self</span>.role = <span class="string">"Beginner Python Developer"</span>
-        <span class="property">self</span>.learning = [<span class="string">"Django"</span>, <span class="string">"React"</span>, <span class="string">"REST APIs"</span>]
-        <span class="property">self</span>.goal = <span class="string">"Becoming a Full-Stack Engineer"</span>
-    
-    <span class="keyword">def</span> <span class="function">current_stack</span>(<span class="property">self</span>):
-        <span class="keyword">return</span> {
-            <span class="string">"Backend"</span>: [<span class="string">"Python"</span>, <span class="string">"Django"</span>, <span class="string">"REST APIs"</span>],
-            <span class="string">"Frontend"</span>: [<span class="string">"HTML"</span>, <span class="string">"CSS"</span>, <span class="string">"JavaScript"</span>, <span class="string">"React"</span>],
-            <span class="string">"Tools"</span>: [<span class="string">"Git"</span>, <span class="string">"n8n"</span>, <span class="string">"VS Code"</span>]
-        }
-    
-    <span class="keyword">def</span> <span class="function">daily_goals</span>(<span class="property">self</span>):
-        <span class="keyword">return</span> [
-            <span class="string">"Learn something new"</span>,
-            <span class="string">"Build functional projects"</span>,
-            <span class="string">"Write clean code"</span>,
-            <span class="string">"Stay consistent"</span>
-        ]
 
-dev = BeginnerDeveloper()
-<span class="function">print</span>(dev.goal)  <span class="comment"># Becoming a Full-Stack Engineer</span></code></pre>
+                    <div class="profile-card">
+                        <div class="profile-card-header">
+                            <i class="fas fa-code" style="color: var(--secondary);"></i>
+                            <h4>Current Stack</h4>
+                        </div>
+                        <div class="stack-list">
+                            <div class="stack-category">
+                                <span class="category-name">Backend:</span>
+                                <span class="category-items">Python, Django, REST APIs</span>
+                            </div>
+                            <div class="stack-category">
+                                <span class="category-name">Frontend:</span>
+                                <span class="category-items">HTML, CSS, JavaScript, React</span>
+                            </div>
+                            <div class="stack-category">
+                                <span class="category-name">Tools:</span>
+                                <span class="category-items">Git, n8n, VS Code</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="profile-card-header">
+                            <i class="fas fa-bullseye" style="color: var(--accent);"></i>
+                            <h4>Daily Goals</h4>
+                        </div>
+                        <div class="goals-list">
+                            <div class="goal-item">✓ Learn something new</div>
+                            <div class="goal-item">✓ Build functional projects</div>
+                            <div class="goal-item">✓ Write clean code</div>
+                            <div class="goal-item">✓ Stay consistent</div>
+                        </div>
                     </div>
                 </div>
             </div>
