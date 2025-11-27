@@ -766,16 +766,7 @@ img {
     }
 }
 
-display: flex;
-align-items: flex-start;
-gap: 1rem;
-padding: 1rem;
-background: var(--bg-card);
-border: 1px solid var(--border);
-border-radius: 8px;
-transition: all 0.3s var(--ease);
-color: var(--text-muted);
-}
+/* End of About Section Upgrade */
 
 .learning-item:hover {
     background: var(--bg-card-hover);
