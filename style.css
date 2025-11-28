@@ -565,40 +565,34 @@ img {
 }
 
 /* Stats Badges */
+/* Stats Badges */
 .stats-badges {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.75rem;
+    gap: 1rem;
     margin-bottom: 2rem;
+    align-items: center;
 }
 
-.stat-badge {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.5rem 1rem;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
+.stats-badges img {
+    height: 28px;
     border-radius: 6px;
     transition: all 0.3s var(--ease);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.stat-badge:hover {
-    border-color: var(--border-light);
-    transform: translateY(-2px);
+.stats-badges a {
+    display: inline-flex;
+    text-decoration: none;
 }
 
-.stat-label {
-    font-size: 0.7rem;
-    font-weight: 600;
-    color: var(--text-muted);
-    letter-spacing: 0.5px;
+.stats-badges img:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.1);
 }
 
-.stat-value {
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--primary);
+color: var(--primary);
 }
 
 .stat-badge:nth-child(1) .stat-value {
