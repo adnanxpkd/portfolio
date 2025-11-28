@@ -1775,6 +1775,12 @@ footer {
         gap: 2rem;
     }
 
+    /* Workflows Grid - 1 column on mobile */
+    .workflows-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
     /* Tech Stack - Adjust for mobile */
     .tech-stack-container {
         gap: 2rem;
