@@ -1257,8 +1257,101 @@ img {
 }
 
 .project-links {
-    display: flex;
     gap: 1rem;
+}
+
+/* --- n8n Workflows Section --- */
+.workflows-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.workflow-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.3s var(--ease);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.workflow-card:hover {
+    transform: translateY(-5px);
+    border-color: #FF6D5A;
+    box-shadow: 0 10px 30px rgba(255, 109, 90, 0.15);
+}
+
+.workflow-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.workflow-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 109, 90, 0.1);
+    color: #FF6D5A;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.workflow-meta h3 {
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem 0;
+    color: var(--text-main);
+}
+
+.workflow-status {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    background: rgba(16, 185, 129, 0.1);
+    color: #10B981;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.workflow-card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.workflow-nodes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.node-tag {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    background: var(--bg-glass);
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.node-tag i {
+    color: #FF6D5A;
 }
 
 /* --- Contact Section --- */
