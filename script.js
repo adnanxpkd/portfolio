@@ -5,22 +5,14 @@ const navLinksItems = document.querySelectorAll('.nav-link');
 
 mobileToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
-    const icon = mobileToggle.querySelector('i');
-    if (navLinks.classList.contains('active')) {
-        icon.classList.remove('fa-bars');
-        icon.classList.add('fa-times');
-    } else {
-        icon.classList.remove('fa-times');
-        icon.classList.add('fa-bars');
-    }
+    mobileToggle.classList.toggle('active');
 });
 
 // Close mobile menu when clicking a link
 navLinksItems.forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
-        mobileToggle.querySelector('i').classList.remove('fa-times');
-        mobileToggle.querySelector('i').classList.add('fa-bars');
+        mobileToggle.classList.remove('active');
     });
 });
 
@@ -41,7 +33,7 @@ window.addEventListener('scroll', () => {
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if (pageYOffset >= (sectionTop - 150)) {
+        if (window.scrollY >= (sectionTop - 150)) {
             current = section.getAttribute('id');
         }
     });
