@@ -53,6 +53,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
+
 // Scroll Animations (Intersection Observer)
 const observerOptions = {
     threshold: 0.2,

@@ -11,7 +11,7 @@
 [![Dependencies](https://img.shields.io/badge/Dependencies-Zero-blueviolet?style=for-the-badge)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![License](https://img.shields.io/badge/License-MIT-gray?style=for-the-badge)](LICENSE.md)
 
-[Live Demo](https://adnanxpkd.vercel.app/) • [Report Bug](https://github.com/muhammedadnank/portfolio/issues) • [Request Feature](https://github.com/muhammedadnank/portfolio/issues)
+[Live Demo](https://muhammedadnank.vercel.app/) • [Report Bug](https://github.com/muhammedadnank/portfolio/issues) • [Request Feature](https://github.com/muhammedadnank/portfolio/issues)
 
 </div>
 
