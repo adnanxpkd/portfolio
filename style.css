@@ -330,7 +330,6 @@ img {
 }
 
 /* --- Navbar --- */
-/* --- Navbar --- */
 .navbar {
     position: fixed;
     top: 0;
@@ -703,7 +702,6 @@ img {
 }
 
 /* Stats Badges */
-/* Stats Badges */
 .stats-badges {
     display: flex;
     flex-wrap: wrap;
@@ -730,20 +728,6 @@ img {
     filter: brightness(1.1);
 }
 
-color: var(--primary);
-}
-
-.stat-badge:nth-child(1) .stat-value {
-    color: #3B82F6;
-}
-
-.stat-badge:nth-child(2) .stat-value {
-    color: #10B981;
-}
-
-.stat-badge:nth-child(3) .stat-value {
-    color: #F59E0B;
-}
 
 
 /* --- About Section --- */
