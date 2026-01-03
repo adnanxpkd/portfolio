@@ -2037,29 +2037,6 @@ footer {
         width: 100%;
         justify-content: center;
     }
-
-    .stats-badges {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        justify-content: center;
-        transform: scale(0.9);
-    }
-
-    .social-badges {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
-        width: 100%;
-    }
-
-    .social-badge {
-        width: 100%;
-        font-size: 0.75rem;
-        padding: 0.5rem;
-        text-align: center;
-        justify-content: center;
-    }
 }
 
 /* Fix for touch interaction delay */
