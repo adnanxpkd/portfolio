@@ -6,11 +6,11 @@
 
 **A high-performance, aesthetically driven personal portfolio showcasing the journey of a Python Developer & Full-Stack Engineer.**
 
-[![Status](https://img.shields.io/badge/Status-Live-success?style=for-the-badge&logo=github)](https://adnanxpkd.github.io/portfolio)
+[![Status](https://img.shields.io/badge/Status-Live-success?style=for-the-badge&logo=github)](https://muhammedadnank.github.io/portfolio)
 [![Performance](https://img.shields.io/badge/Performance-100-orange?style=for-the-badge&logo=lighthouse)](https://pagespeed.web.dev/)
 [![Dependencies](https://img.shields.io/badge/Dependencies-Zero-blueviolet?style=for-the-badge)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-[Live Demo](https://adnanxpkd.vercel.app/) • [Report Bug](https://github.com/adnanxpkd/portfolio/issues) • [Request Feature](https://github.com/adnanxpkd/portfolio/issues)
+[Live Demo](https://adnanxpkd.vercel.app/) • [Report Bug](https://github.com/muhammedadnank/portfolio/issues) • [Request Feature](https://github.com/muhammedadnank/portfolio/issues)
 
 </div>
 
@@ -77,7 +77,7 @@ portfolio/
 
 1. **Clone & Explore**
    ```bash
-   git clone https://github.com/adnanxpkd/portfolio.git
+   git clone https://github.com/muhammedadnank/portfolio.git
    cd portfolio
    ```
 
@@ -110,7 +110,7 @@ I am always looking for ways to improve! If you find a bug or have a suggestion,
 *Aspiring Full-Stack Software Engineer*
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammed-adnan-k-88b612281/)
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/adnanxpkd)
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/muhammedadnank)
 [![Telegram](https://img.shields.io/badge/-Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/adnanxpkd)
 
 ---
@@ -121,6 +121,6 @@ Distributed under the MIT License. See `LICENSE.md` for more information.
 
 ### 🌟 If this inspires you, give it a star!
 
-![Visitor Count](https://komarev.com/ghpvc/?username=adnanxpkd&label=Portfolio%20Views&color=3B82F6&style=for-the-badge)
+![Visitor Count](https://komarev.com/ghpvc/?username=muhammedadnank&label=Portfolio%20Views&color=3B82F6&style=for-the-badge)
 
 </div>
