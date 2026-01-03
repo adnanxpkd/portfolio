@@ -1980,6 +1980,41 @@ footer {
         width: 240px;
         height: 240px;
     }
+
+    /* Project Card Mobile Upgrades */
+    .project-card {
+        border-radius: 16px;
+    }
+
+    .project-img-wrapper {
+        height: 220px;
+    }
+
+    .project-content {
+        padding: 1.5rem;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .project-desc {
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+    .learning-highlights {
+        padding: 0.8rem;
+    }
+
+    .learning-list {
+        font-size: 0.8rem;
+    }
+
+    .tag {
+        padding: 0.25rem 0.6rem;
+        font-size: 0.7rem;
+    }
 }
 
 @media (max-width: 480px) {
