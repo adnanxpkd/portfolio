@@ -157,6 +157,95 @@ img {
     width: 100%;
 }
 
+/* --- Utilities --- */
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-sm {
+    margin-bottom: 0.5rem;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.max-w-600 {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-invert {
+    filter: invert(1);
+}
+
+.text-primary-icon {
+    margin-right: 10px;
+    color: var(--primary);
+}
+
+.text-accent-icon {
+    margin-right: 10px;
+    color: var(--accent);
+}
+
+.text-n8n-icon {
+    margin-right: 10px;
+    color: #FF6D5A;
+}
+
+.fs-small {
+    font-size: 0.85rem;
+}
+
+.fs-xs {
+    font-size: 0.75rem;
+}
+
+.bg-primary-dim {
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--primary);
+}
+
+.bg-secondary-dim {
+    background: rgba(139, 92, 246, 0.1);
+    color: var(--secondary);
+}
+
+.bg-accent-dim {
+    background: rgba(236, 72, 153, 0.1);
+    color: var(--accent);
+}
+
+.transition-delay-100 {
+    transition-delay: 100ms;
+}
+
+.transition-delay-200 {
+    transition-delay: 200ms;
+}
+
+.section-bg-soft {
+    background: rgba(255, 255, 255, 0.01);
+}
+
 /* --- Components --- */
 .btn {
     display: inline-flex;
@@ -1102,6 +1191,49 @@ color: var(--primary);
     font-style: italic;
 }
 
+/* Specific Progress Bar Colors */
+.progress-bar.primary {
+    background: var(--primary);
+}
+
+.progress-bar.secondary {
+    background: var(--secondary);
+}
+
+.progress-bar.accent {
+    background: var(--accent);
+}
+
+/* Stats Grid for Learning Section */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.stat-card {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.stat-desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+}
+
 /* --- Projects Section --- */
 .projects-grid {
     display: grid;
@@ -1251,7 +1383,15 @@ color: var(--primary);
 }
 
 .project-links {
+    display: flex;
     gap: 1rem;
+    margin-top: auto;
+}
+
+.learning-list {
+    margin: 0;
+    padding-left: 1.2rem;
+    list-style: disc;
 }
 
 /* --- n8n Workflows Section --- */
