@@ -473,14 +473,54 @@ img {
 /* Mobile Toggle */
 .mobile-toggle {
     display: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: var(--text-main);
-    padding: 0.5rem;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.02);
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
     border: 1px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 0;
     transition: all 0.3s var(--ease);
+}
+
+.mobile-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text-main);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s var(--ease);
+}
+
+.mobile-toggle span:nth-child(1) {
+    top: 13px;
+}
+
+.mobile-toggle span:nth-child(2) {
+    top: 19px;
+}
+
+.mobile-toggle span:nth-child(3) {
+    top: 25px;
+}
+
+/* Hamburger to X Animation */
+.mobile-toggle.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.mobile-toggle.active span:nth-child(2) {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.mobile-toggle.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .mobile-toggle:hover {
@@ -584,22 +624,23 @@ img {
 
 .social-badges {
     display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
     flex-wrap: wrap;
-    gap: 0.75rem;
-    margin-bottom: 1.5rem;
 }
 
 .social-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    font-size: 0.75rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
     font-weight: 700;
-    letter-spacing: 0.5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
     transition: all 0.3s var(--ease);
-    border: 1px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .social-badge i {
@@ -1942,13 +1983,54 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .personality-grid {
-        grid-template-columns: 1fr;
+    .hero {
+        padding-top: 80px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-desc {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .stats-badges {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+        transform: scale(0.85);
+        margin-bottom: 1.5rem;
+    }
+
+    .social-badges {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        width: 100%;
+        margin-bottom: 1.5rem;
     }
 
     .social-badge {
         width: 100%;
+        font-size: 0.7rem;
+        padding: 0.5rem;
+        text-align: center;
         justify-content: center;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .personality-grid {
+        grid-template-columns: 1fr;
     }
 
     .nav-cta {
@@ -1957,8 +2039,26 @@ footer {
     }
 
     .stats-badges {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+        transform: scale(0.9);
+    }
+
+    .social-badges {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .social-badge {
+        width: 100%;
+        font-size: 0.75rem;
+        padding: 0.5rem;
+        text-align: center;
+        justify-content: center;
     }
 }
 
