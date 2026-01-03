@@ -1,128 +1,61 @@
-# 🚀 Personal Portfolio - Muhammed Adnan K
+# ⚡ Muhammed Adnan K | Full-Stack Portfolio
 
 <div align="center">
 
-![Portfolio Banner](https://via.placeholder.com/1200x400?text=Muhammed+Adnan+K+-+Python+Developer)
+![Portfolio Banner](images/django_api_preview.png)
 
-A modern, responsive, and interactive portfolio website showcasing my journey as a beginner Python developer learning full-stack development. Built with performance and aesthetics in mind.
+**A high-performance, aesthetically driven personal portfolio showcasing the journey of a Python Developer & Full-Stack Engineer.**
 
 [![Status](https://img.shields.io/badge/Status-Live-success?style=for-the-badge&logo=github)](https://adnanxpkd.github.io/portfolio)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Performance](https://img.shields.io/badge/Performance-100-orange?style=for-the-badge&logo=lighthouse)](https://pagespeed.web.dev/)
+[![Dependencies](https://img.shields.io/badge/Dependencies-Zero-blueviolet?style=for-the-badge)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-[View Demo](https://adnanxpkd.vercel.app/) • [Report Bug](https://github.com/adnanxpkd/portfolio/issues) • [Request Feature](https://github.com/adnanxpkd/portfolio/issues)
-
+[Live Demo](https://adnanxpkd.vercel.app/) • [Report Bug](https://github.com/adnanxpkd/portfolio/issues) • [Request Feature](https://github.com/adnanxpkd/portfolio/issues)
 
 </div>
 
 ---
 
-## 📖 Table of Contents
+## 🚀 The Philosophy
 
-- [✨ Features](#-features)
-- [🛠️ Tech Stack](#-tech-stack)
-- [🎨 Design System](#-design-system)
-- [🚀 Getting Started](#-getting-started)
-- [📁 Project Structure](#-project-structure)
-- [🎯 Customization](#-customization)
-- [📱 Responsive Design](#-responsive-design)
-- [🤝 Contributing](#-contributing)
-- [👤 Author](#-author)
+This portfolio isn't just a collection of links; it's a testament to **Clean Code** and **Performant Design**. Built from the ground up using **Pure Vanilla Web Technologies**, it prioritizes speed, accessibility, and a premium user experience without the bloat of modern frameworks.
 
----
-
-## ✨ Features
-
-### 🎨 **Immersive Design**
-- **Pure Black Theme**: A sophisticated dark mode design (`#000000`) with vibrant blue and purple accents.
-- **Adaptive Particles**: An intelligent background system that reacts to mouse movement and adapts to system themes.
-- **Glassmorphism**: Subtle glass effects on cards and overlays for a modern feel.
-
-### ⚡ **High Performance**
-- **60fps Animations**: Optimized rendering for smooth scrolling and interactions.
-- **Zero Dependencies**: Built with Vanilla JS for maximum speed and minimal bloat.
-- **Responsive**: Fluid layouts that adapt perfectly to mobile, tablet, and desktop screens.
-
-### 🌟 **Key Highlights**
-| Feature | Description |
-|---------|-------------|
-| **Dynamic Hero** | Interactive particle background with mouse repulsion and linking effects. |
-| **Smart Theme** | Auto-detects system dark/light mode preferences. |
-| **Tech Cards** | Interactive 3D-style cards for skills with hover glow effects. |
-| **Profile Cards** | Modern, text-based profile section replacing traditional code windows. |
-| **Social Badges** | Custom-branded social links with accurate brand colors. |
+### ✨ Key Features
+- **Pure Vanilla Core**: 0% Frameworks (No React/Vue/Tailwind) — 100% optimized HTML5, CSS3, and JavaScript.
+- **Dynamic Particle Engine**: A custom-built Canvas API background that reacts to user interaction and system themes.
+- **Glassmorphic UI**: High-end design aesthetics with subtle blurs, gradients, and micro-animations.
+- **Responsive Mastery**: Crafted with CSS Grid and Flexbox for a flawless experience across all devices.
+- **n8n Automation Showroom**: Dedicated section for advanced backend workflows and process automation.
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack & Ecosystem
 
-This portfolio is built using a clean and modern stack without heavy frameworks, ensuring longevity and ease of maintenance.
+### **Core Frontend**
+- **HTML5**: Semantic structure for maximum accessibility and SEO.
+- **CSS3**: Advanced variables, Grid, Flexbox, and complex keyframe animations.
+- **JavaScript (ES6+)**: Custom DOM manipulation, intersection observers, and particle physics.
 
-| Category | Technology | Usage |
-|----------|------------|-------|
-| **Core** | ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white) | Semantic structure and accessibility. |
-| **Styling** | ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white) | Grid, Flexbox, Variables, and Animations. |
-| **Logic** | ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black) | Particle engine, DOM manipulation, and logic. |
-| **Icons** | ![FontAwesome](https://img.shields.io/badge/-FontAwesome-339AF0?logo=fontawesome&logoColor=white) | Scalable vector icons for UI elements. |
-| **Fonts** | ![Google Fonts](https://img.shields.io/badge/-Google_Fonts-4285F4?logo=google&logoColor=white) | *Inter* for UI and *JetBrains Mono* for code. |
+### **The Backend Journey**
+- **Python & Django**: Building robust RESTful APIs and secure backends.
+- **FastAPI**: High-performance asynchronous API development.
+- **Databases**: PostgreSQL, MongoDB, and Redis integration.
+
+### **Automation & Tools**
+- **n8n**: Complex workflow automation and system integration.
+- **Docker & Linux**: Containerization and server-side management.
+- **Git & GitHub**: Professional version control and collaborative workflows.
 
 ---
 
 ## 🎨 Design System
 
-The design system is built on CSS Custom Properties for easy theming and consistency.
-
-### **Color Palette**
-| Color | Hex | Usage |
-|-------|-----|-------|
-| 🔵 **Primary** | `#3B82F6` | Links, Buttons, Highlights |
-| 🟣 **Secondary** | `#8B5CF6` | Accents, Gradients |
-| 🩷 **Accent** | `#EC4899` | Special Highlights |
-| 🟢 **Success** | `#10B981` | Status Indicators |
-| ⚫ **Background** | `#000000` | Main Body Background |
-| 🌑 **Surface** | `#0a0a0a` | Card Backgrounds |
-
-### **Typography**
-- **Headings & Body**: `Inter` - Clean, modern, and highly readable.
-- **Code & Monospace**: `JetBrains Mono` - Developer-focused and technical.
-
----
-
-## 🚀 Getting Started
-
-Follow these steps to get a local copy up and running.
-
-### Prerequisites
-- A modern web browser (Chrome, Firefox, Safari, Edge).
-- Git installed on your machine.
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/adnanxpkd/portfolio.git
-   cd portfolio
-   ```
-
-2. **Run locally**
-   You can use any static file server. Here are a few methods:
-
-   **Using Python (Recommended)**
-   ```bash
-   python3 -m http.server 8000
-   ```
-
-   **Using VS Code Live Server**
-   - Open the folder in VS Code.
-   - Click "Go Live" at the bottom right.
-
-3. **View the site**
-   Open your browser and navigate to:
-   ```
-   http://localhost:8000
-   ```
+| Element | Specification |
+|---------|---------------|
+| **Background** | Pure Black (`#000000`) for true depth. |
+| **Accents** | Primary Blue (`#3B82F6`), Secondary Purple (`#8B5CF6`). |
+| **Typography** | **Inter** (UI) and **JetBrains Mono** (Technical/Code). |
+| **Animations** | Cubic-bezier transitions for a "mechanical" yet smooth feel. |
 
 ---
 
@@ -130,77 +63,38 @@ Follow these steps to get a local copy up and running.
 
 ```bash
 portfolio/
-├── index.html          # The main entry point (Semantic HTML5)
-├── style.css           # Global styles, variables, and animations
-├── script.js           # Particle engine and UI logic
-├── images/             # Static assets directory
-│   └── image.png       # Profile picture
-├── README.md           # Project documentation
-└── LICENSE             # MIT License file
+├── images/             # Optimized assets (Previews, Profile, Icons)
+├── index.html          # Main entry point (Semantic & SEO Optimized)
+├── style.css           # Global design system & utility classes
+├── script.js           # Core engine (Particles, UI Logic, Menus)
+├── LICENSE.md          # MIT Open Source License
+└── README.md           # Project documentation
 ```
 
 ---
 
-## 🎯 Customization
+## 🚀 Getting Started
 
-Making this portfolio your own is simple.
+1. **Clone & Explore**
+   ```bash
+   git clone https://github.com/adnanxpkd/portfolio.git
+   cd portfolio
+   ```
 
-### 1. Update Personal Information
-Open `index.html` and modify the content within the tags.
-```html
-<!-- Hero Section -->
-<h1>Your Name</h1>
-<div class="hero-subtitle">Your Role</div>
-```
+2. **Serve it Up**
+   ```bash
+   # Using Python
+   python3 -m http.server 8000
+   ```
 
-### 2. Configure Social Links
-Update the `href` attributes in the social badges section.
-```html
-<a href="https://github.com/yourusername" class="social-badge github">...</a>
-```
-
-### 3. Modify Skills
-Add or remove skill cards in the Skills section.
-```html
-<div class="tech-card">
-    <img src="path/to/icon.svg" alt="Skill Name">
-    <span class="tech-name">Skill Name</span>
-</div>
-```
-
----
-
-## 📱 Responsive Design
-
-The portfolio is fully responsive and tested across various devices.
-
-- **Desktop (>1200px)**: Full layout with side-by-side sections.
-- **Tablet (768px - 1199px)**: Adaptive grid layouts.
-- **Mobile (<768px)**: Stacked layout, hamburger menu, and touch-optimized targets.
-
----
-
-## 👤 Author
-
-<div align="center">
-
-**Muhammed Adnan K**
-
-*Beginner Python Developer | Aspiring Full-Stack Engineer*
-
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/adnanxpkd)
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/adnanxpkd)
-[![Telegram](https://img.shields.io/badge/-Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/adnanxpkd)
-[![Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/adnanxpkd)
-[![Email](https://img.shields.io/badge/-Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adnanxpkd@gmail.com)
-
-</div>
+3. **Launch**
+   Visit `http://localhost:8000` in your browser.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/adnanxpkd/portfolio/issues).
+I am always looking for ways to improve! If you find a bug or have a suggestion, feel free to open an issue or submit a pull request.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -210,15 +104,22 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ---
 
-## 📝 License
+## 👤 Author
 
-Distributed under the MIT License. See `LICENSE` for more information.
+**Muhammed Adnan K**
+*Aspiring Full-Stack Software Engineer*
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammed-adnan-k-88b612281/)
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/adnanxpkd)
+[![Telegram](https://img.shields.io/badge/-Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/adnanxpkd)
 
 ---
 
 <div align="center">
 
-### ⭐ Star this repo if you found it helpful!
+Distributed under the MIT License. See `LICENSE.md` for more information.
+
+### 🌟 If this inspires you, give it a star!
 
 ![Visitor Count](https://komarev.com/ghpvc/?username=adnanxpkd&label=Portfolio%20Views&color=3B82F6&style=for-the-badge)
 
