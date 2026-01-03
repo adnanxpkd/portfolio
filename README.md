@@ -7,9 +7,10 @@
 **A high-performance, aesthetically driven personal portfolio built with zero dependencies. Showcasing expertise in Python, Django, and modern Full-Stack engineering.**
 
 [![Status](https://img.shields.io/badge/Status-Live-success?style=for-the-badge&logo=github&logoColor=white)](https://muhammedadnank.github.io/portfolio)
-[![Performance](https://img.shields.io/badge/Performance-100-orange?style=for-the-badge&logo=lighthouse&logoColor=white)](https://pagespeed.web.dev/)
-[![Dependencies](https://img.shields.io/badge/Dependencies-Zero-blueviolet?style=for-the-badge)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![License](https://img.shields.io/badge/License-MIT-gray?style=for-the-badge)](LICENSE.md)
+[![Performance](https://img.shields.io/badge/Performance-100-orange?style=for-the-badge&logo=lighthouse&logoColor=white)](https://pagespeed.web.dev/report?url=https://muhammedadnank.vercel.app/)
+[![Accessibility](https://img.shields.io/badge/Accessibility-100-brightgreen?style=for-the-badge&logo=accessibility&logoColor=white)](https://pagespeed.web.dev/report?url=https://muhammedadnank.vercel.app/)
+[![Best Practices](https://img.shields.io/badge/Best%20Practices-100-blue?style=for-the-badge&logo=googlechrome&logoColor=white)](https://pagespeed.web.dev/report?url=https://muhammedadnank.vercel.app/)
+[![SEO](https://img.shields.io/badge/SEO-100-success?style=for-the-badge&logo=google&logoColor=white)](https://pagespeed.web.dev/report?url=https://muhammedadnank.vercel.app/)
 
 [Live Demo](https://muhammedadnank.vercel.app/) • [Report Bug](https://github.com/muhammedadnank/portfolio/issues) • [Request Feature](https://github.com/muhammedadnank/portfolio/issues)
 
@@ -23,7 +24,7 @@ This portfolio is a showcase of **Technical Purity**. In an era of heavy framewo
 
 ### 💎 Key Highlights
 - **Zero-Dependency Engine**: 100% Core HTML5, CSS3, and ES6+ JavaScript. Fast, lightweight, and dependency-free.
-- **Fluid Response System**: Implemented using `clamp()` fluid typography and CSS Grid, ensuring a "perfect fit" across all device resolutions.
+- **Fluid Response System**: Implemented using `clamp()` fluid typography and CSS Grid, ensuring a "perfect fit" across all device resolutions (Mobile, Tablet, Desktop).
 - **Physics-Based UI**: A custom-coded Canvas API background featuring interactive particle physics and theme-aware lighting.
 - **Glassmorphic Design**: Sleek dark-mode aesthetic with real-time backdrop blurs and subtle micro-animations.
 - **Performance Optimized**: Lighthouse-perfect scores with zero runtime overhead and minimal asset payload.
@@ -38,6 +39,11 @@ This portfolio is a showcase of **Technical Purity**. In an era of heavy framewo
 | :---: | :---: |
 | ![Django API](images/django_api_preview.png) | ![Python Automation](images/python_automation_preview.png) |
 | *Scalable API Architecture* | *Workflow Automation Logic* |
+
+| React Component Library | n8n Workflows |
+| :---: | :---: |
+| ![React Project](images/task4_web_clone.jpg) | ![n8n Automation](images/website.png) |
+| *Modular UI Construction* | *Process Automation Engine* |
 
 </div>
 
@@ -103,7 +109,7 @@ portfolio/
    ```
 
 3. **Explore**
-   Open `http://localhost:8000` in your browser.
+   Visit `http://localhost:8000` in your browser.
 
 ---
 
