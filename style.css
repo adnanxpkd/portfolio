@@ -2023,6 +2023,10 @@ footer {
         justify-content: center;
     }
 
+    .social-badge.github {
+        grid-column: span 2;
+    }
+
     .btn {
         width: 100%;
         justify-content: center;
